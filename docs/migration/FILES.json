@@ -1,0 +1,1419 @@
+{
+  "sourceRepository": "leedb333/kids-game-playground",
+  "sourceCommit": "d608a79becc6ea9731c7ddf72ef8671fe25eb92e",
+  "copied": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "sha256": "fb582173e94c9332bf54fd3432d7e02c7474024b4204737b45e8c34139e1f436"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "df3d49374dcfefb90dab9b99b9bfc3240be8226c6932da4001727a67bf5965f4"
+    },
+    {
+      "path": "package.json",
+      "sha256": "dbfbf76726094496adfb576748a253eae3df9ee336beea487a5d2b026f90fbcc"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "3b3835b831f32ddb58f5de5bdc84a3431fdf20c483b9242b742755d16abc174e"
+    },
+    {
+      "path": "prototypes/cooking-v2/burger/index.html",
+      "sha256": "db05a6c90729b565fc37dbf73145475a0cbb00cfe5c0fd029f99cb33ad736ef9"
+    },
+    {
+      "path": "prototypes/cooking-v2/cupcake/index.html",
+      "sha256": "acd7f32904940d91a65e4e4a37f0120d703ce7531bda4915c57a065da5c38337"
+    },
+    {
+      "path": "prototypes/cooking-v2/icecream/index.html",
+      "sha256": "b49a3b44d2b9f78209a0ee009f0c86fa6a6abd909b0dc4e12234194ecf9a651d"
+    },
+    {
+      "path": "prototypes/cooking-v2/index.html",
+      "sha256": "4ea0182153e6bf18d9b2f88116995a858fad13badc72ce4af970c9c2799ffdc0"
+    },
+    {
+      "path": "prototypes/cooking-v2/kitchen/index.html",
+      "sha256": "faab23541e03adebe8fd8d38b5e4a87219d6b39b0abc1c967185d80da065ee2b"
+    },
+    {
+      "path": "public/assets/cooking-v2/cupcake/cupcake-baked-base.png",
+      "sha256": "ce83f6bae052c64a130ddb4b92bcc917eda15e90117a9adfb072bf8ba79c5c1f"
+    },
+    {
+      "path": "public/assets/cooking-v2/cupcake/mixing-bowl-batter.png",
+      "sha256": "5e087d5420125de0a6a0be5a6da4fcbaa75d1a4ae10862241d7bed836a8cf7e1"
+    },
+    {
+      "path": "public/assets/cooking-v2/cupcake/three/cup-wrapper-back-inside.png",
+      "sha256": "c412465bc12416434bf3922a513f283e4c9c208d650f37690a62fab03b1833e1"
+    },
+    {
+      "path": "public/assets/cooking-v2/cupcake/three/cup-wrapper-front.png",
+      "sha256": "bf1a870d4fe8a1f1da87b0557e4e37f17cefb7513999208da89c055c0620850c"
+    },
+    {
+      "path": "public/assets/cooking-v2/cupcake/three/cupcake-tray-3-base.png",
+      "sha256": "daa4ad0f173926c65cecb5403fef7f9907b61dfc68ad408fc7b2e5e525e9f81e"
+    },
+    {
+      "path": "public/assets/cooking-v2/cupcake/three/ingredient-egg.png",
+      "sha256": "ebc9af731c0f758a0193aa1eded2d6aa4b18239d9b21e9e5cf351d40fa6be355"
+    },
+    {
+      "path": "public/assets/cooking-v2/cupcake/three/ingredient-flour.png",
+      "sha256": "86df4246d213a9e6fb7611d768346ab50776e3a0ff0ec966ebe75f320caec2a3"
+    },
+    {
+      "path": "public/assets/cooking-v2/cupcake/three/ingredient-milk.png",
+      "sha256": "788a2458c36a509da30198f8322027fcc0881d3dd440b0e6c37acf7682393515"
+    },
+    {
+      "path": "public/assets/cooking-v2/cupcake/three/ingredient-sugar.png",
+      "sha256": "ba3abef7b02906bd3b19937fc11535a223ad4b350b003165138b7f42979e71c0"
+    },
+    {
+      "path": "public/assets/cooking-v2/cupcake/three/mixing-bowl-empty.png",
+      "sha256": "a277d5b6ac0f408ccc268dbf77391086754b0b8ea122eafd3047eeabf673f733"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/background/icecream-shop-background.png",
+      "sha256": "61333c95bd8292cd0ab433be7ec97f273b4f27b2741d9e7488f5d933a3ff90b0"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/containers/container-cone.png",
+      "sha256": "4704ba1b12454dc298f714edf6706f1c54d52b51893c0b19d8a5fb1e49cafd68"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/containers/container-cup.png",
+      "sha256": "8ed643370ff14a2dad120304abb93d83bccaa03cc98def7de4d2f5833f707af0"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/scoops/scoop-blueberry.png",
+      "sha256": "f0988fa4b55676c4d643efdf2b2714b3f5dec8082eb6066482ca2fd7aa0a825b"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/scoops/scoop-chocolate.png",
+      "sha256": "f6f0d99715fcdfd17541213f0abd1bfda25c315b51beca600cfcb828005d344a"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/scoops/scoop-cookies-cream.png",
+      "sha256": "04c9755550f916d875dfa8e26fb0a978129fa7cda37b9e088f3eca463434e9f1"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/scoops/scoop-cotton-candy.png",
+      "sha256": "db7eec83b5056bd44f58d0f47e92949bbd1b724edca8e6c14317e7f99d7c49ab"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/scoops/scoop-mango.png",
+      "sha256": "1b80a08bd48f02abcb5dfb51e480b57db422db6511dc6b06b89b3fc8bcbaa19b"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/scoops/scoop-mint-choco.png",
+      "sha256": "aa1cc275e81608caf933537734cac222f733647fde2a3f685cbfbedee3d4e89c"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/scoops/scoop-pistachio.png",
+      "sha256": "616c86c68e13d45ee6a0e7dfb4f96ab8559ac0f8fe6f004f0e7fbda952200626"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/scoops/scoop-rainbow-sherbet.png",
+      "sha256": "22a11605b1e78b41b39b8977ab648272ccc21c314fec9f830eb0544b01dcc552"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/scoops/scoop-strawberry.png",
+      "sha256": "ccf85d6fc4f74ee3fe2006c590ecc1ee979a34df0cabf4a90c5583cc5757e904"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/scoops/scoop-vanilla.png",
+      "sha256": "76f0a4bf67380f7220758f96919a2d250c4567aec30ec8d0ee2b76e9977b91e9"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/toppings/topping-candy.png",
+      "sha256": "e2cffe72569cb420f56d3c9c2e4379c670988b84816af1fe87b862f46e4df418"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/toppings/topping-cherry.png",
+      "sha256": "47bedb25f625841bbe713ddd42881b00d863333762ef655d9eb1e51701abba5c"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/toppings/topping-choco-cookie.png",
+      "sha256": "46a957e837dc99af59c2b0cb89736b82af19da01488a316c7d8efe7f9aeb5190"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/toppings/topping-choco-syrup.png",
+      "sha256": "985f13830b60a9ffa67c02e108cb714faa173d648d91bc513b0eb4b8f7f94982"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/toppings/topping-heart-wafer.png",
+      "sha256": "d8304d1d970eaa373723744031d3261daab4b28f36691271318ea54071e05684"
+    },
+    {
+      "path": "public/assets/cooking-v2/icecream/toppings/topping-sprinkles.png",
+      "sha256": "e4b49130e3d3c85851c81a3306c90e9d296bafea4d87b40668f45b2d71e7224c"
+    },
+    {
+      "path": "src/games/cooking-v2/RecipeLinks.tsx",
+      "sha256": "39cbaf50206814f9a2294f8d6d09951de5e63f4f8fb8757cc5f1bd4ee94bce9a"
+    },
+    {
+      "path": "src/games/cooking-v2/Workbench.tsx",
+      "sha256": "5e7059705d23a65d3380b1d9d5d8950ce0ba8cd9e6fd02fb4937fc50238851a6"
+    },
+    {
+      "path": "src/games/cooking-v2/assets.ts",
+      "sha256": "929e0b7ba877fd7556a14cbc26504fcc3790c13b2a139447a2a83d7a1a029d7d"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/board.png",
+      "sha256": "8efef94214518d789ffb7ee93c21720cdda73711d737d8cfc32ad8bc267ac5f8"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/cheese-a.png",
+      "sha256": "5f53bb1a369353705ab1aece1c0e971398ef2afc0c7f7db1cdfb03e695b73b89"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/cheese-b.png",
+      "sha256": "cac85d261391ca0bf980bd0e3af480230119782f316e5978e0c08fb2cac3259e"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/cheese-c.png",
+      "sha256": "92ffb3d630d9743ba7a3fe007368d5a8a3aaba5ee2235cb1586b65a91ab8e12a"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/cheese-melt.png",
+      "sha256": "e21422cd762ae47cf438f9df0415f7d155c9917085cb7ad4c4a2d1ef8916da48"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/cheese-pile.png",
+      "sha256": "169c367ef2df2ddabcb5a8538cca78c5f83b4630ed5f743f5e6b5309e26de2f1"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/counter.png",
+      "sha256": "6788e4160cfbc1ee7238aaa238333d660d2e4d3844ac4af95f4b3cfa665f36c2"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/dough-baked.png",
+      "sha256": "ac93ea73b45a8176759c1609c266e846d936fb3ec76a499a35585c5b911c7152"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/dough-ball.png",
+      "sha256": "8289912968b33e0bc709b5f2e9ed3baf52780b102eded460d838f85d67f93b36"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/dough-mid.png",
+      "sha256": "63c4e1d1f07fbd7788b4d8f948b0db95d3f6ef810917b494a8351a1c0dc322e3"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/dough.png",
+      "sha256": "8cc093c2dcaa5115713b7f899c20d226587b6bed7f4205eaf11e353388e32725"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/mushroom.png",
+      "sha256": "db2c5a1a7c178929848805e4a8167e382ab3d9fcb8448ebd279579f071d89606"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/olive.png",
+      "sha256": "ab8f2ed1b77c7bac7c7e2b0d132fced749a26fd6231a399a22450e65c24a637d"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/onion.png",
+      "sha256": "0687b141b3ebeeaf9ce3c5dde2bfac41cf14dbb8b82d29a1792a9e72898b6935"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/paprika.png",
+      "sha256": "e4b4d4cc07bc0c257a059965ece5b31637f568e0e60b2499e2e97040a472a42a"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/pepperoni.png",
+      "sha256": "99212efb0ba3d5b6f50fc38244760840d4f8426b83d79f7a4f0e6a378f257a82"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/room.png",
+      "sha256": "f142a8b396538a4f9707e13f14e73ad7d74f4861e65e138bfc5dbcbc2466b1bf"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/sauce.png",
+      "sha256": "06abeb0fdef02b538a64d650a3c9f1fe03ca869f3ab1bbe5f9240de9f9ba2b0a"
+    },
+    {
+      "path": "src/games/cooking-v2/assets/spoon.png",
+      "sha256": "0f5e50d627856c4303c2a7fefd2e0a9aa81ffb2a270a3e2e999d6c9d76b2648e"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/Burger.tsx",
+      "sha256": "962dd4bea114bf2ed83893724f5c12366824f942e98361634e918ab173438514"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets.ts",
+      "sha256": "226838938e7b23b30648823a6bef99c5a36bf44bb91acf880332fb0eaadb6e9e"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/bacon.png",
+      "sha256": "1e66a4e3c7f4078cb8296e70342c06a824a21a42e53c9be14255589386358229"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/bun-bottom.png",
+      "sha256": "4e682dcfc413ee8bf6ab7fb9fd8e87d3d7d6469f3c67161633663a9954d045df"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/bun-top.png",
+      "sha256": "7d1a018aac866bbf20594ec99d4d43a00f62ce122bcc9cd5f3e9b694485ef8e9"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/cheese-stack.png",
+      "sha256": "f4dcb56ceaf38dda7d061558b75566910bd3e2c64112a31d69fb71dfb0bc503b"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/cheese.png",
+      "sha256": "7a19cdc62141a14f8afff2df9168e596699c06380db4a0e394ae4dcda1a77cb4"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/egg.png",
+      "sha256": "59459974c2e3b53d48741bd17aab6280fd4c0e8484dbfd28c113cf83692d5c06"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/frying-pan.png",
+      "sha256": "7acda645f6d5f65a27f4b605c4f85a29b5cf70c2cef365b89e32547181f11c33"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/lettuce-stack.png",
+      "sha256": "6074e3878fc3628199f57c6d499465c443c8dc9069ebc6cc62a06301f3551232"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/lettuce.png",
+      "sha256": "2d1e4ec35b20846abc06c8afe41f4e6185b77f37fda9b19cc50cdb4b8584a983"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/mushroom-group.png",
+      "sha256": "acaf800b197c344659da4cc25203758ebbbf818d9c873870e447f003c591093d"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/onion-group.png",
+      "sha256": "215e130d0661560943cf2ec55f0de3e259c9a8650cbfd256edaca1e20b4418cb"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/patty-cooked.png",
+      "sha256": "187e098663464c769fe0de691a68a0892aac799138d1e02323945e4f4e1d8f05"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/patty-raw.png",
+      "sha256": "618fad7961b571b2fa170b59c25f2926bcc6972ed17562f8e92f1772c8301473"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/pickle-group.png",
+      "sha256": "06a601271019fad2311ba9bf7caf7431f7037b7b7d023d49242ced4aae1a7867"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/plate.png",
+      "sha256": "844068c1cf99fb3f91c751e7b77b890150a70ea4ff836d50e6003974fc14eb8c"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/sauce-ketchup-bottle.png",
+      "sha256": "d4527970fa0403389a76575fada29e07b2cbc38803560ef512a4534594aaf694"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/sauce-ketchup-bowl.png",
+      "sha256": "ec850310b1b547724a76071b2c469f3e4c4345bcf04cb1d1d4cffec44aeabbb7"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/sauce-ketchup-drizzle.png",
+      "sha256": "21186ae2bf629cf8eff05171427d2081bd14a54fee1caa09f0ee697e722e1e87"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/sauce-mayonnaise-bottle.png",
+      "sha256": "e85bc9add3991db5453b5b36d2cf2c76c1c93bcf9851feeb4556ca3176f9c302"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/sauce-mayonnaise-bowl.png",
+      "sha256": "92d449fc84764fc1c680da34309d161ddad992b60078db14d73a21735b39fe5f"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/sauce-mayonnaise-drizzle.png",
+      "sha256": "db76ac55c5c5154928f06a846953a60983f0aaec40e605b20e1fe9216609417c"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/sauce-mustard-bottle.png",
+      "sha256": "43843ac698bb9e701da9d81ce06ff03fda0f0f4a538645b31c6b9a89117c60d6"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/sauce-mustard-bowl.png",
+      "sha256": "a8b58e0cff863083a2b7b7f013e62dd5331577ce273569060372150ed5526065"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/sauce-mustard-drizzle.png",
+      "sha256": "a0354adcb2191899b660089f654b4ad160afe2f42b827635229802c8a0fc15b9"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/spatula.png",
+      "sha256": "013bf2437804a675b30013ebe7cfd0e6ebfeca84f90a136569ade2053da631b8"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/tomato-stack.png",
+      "sha256": "c1c2340ebf88ae9dd57c540853b6bb05416be6c2a544de89a58b535805870f22"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/assets/tomato.png",
+      "sha256": "26121ddff4add00d5553c51a6080778687d96d05aee6af094cc55301d0f873b5"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/main.tsx",
+      "sha256": "8643b20ec931a73e9b892847c89a6cc040ce54e0967f41cd77c6fe82511f3d72"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/model.ts",
+      "sha256": "7f301d3688687cf716460add69e1791352f1950e5bd3f6aeaa215f5f8a2cefa9"
+    },
+    {
+      "path": "src/games/cooking-v2/burger/style.css",
+      "sha256": "a89e030b014022e91ca998b5379a55f9a4f4ec7788fa6012ca31bfb3f56315a3"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/Cupcake.tsx",
+      "sha256": "5dfd8b0e120879f6950630fca882fae36fb0af71cb7d7398a9569b1b4a2cf432"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/Scenes.tsx",
+      "sha256": "7f85575a6aeee27f1444b143d525a2dd5539a4ddb666dc0696430ffd240579ea"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets.ts",
+      "sha256": "2e8254b5b24bbe8f893c1b0ad99cc6d83c0d0ac7d0f56ea61c7de8a7d3f17941"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets/batter-surface.png",
+      "sha256": "9e357980517bc6ee4ffde4feb61d64f76dbc7f06e0aef375ffaf6d45dfc8fcb9"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets/cupcake-baked-base.png",
+      "sha256": "fd0385220f5f8296e5b3d652902057f9d166b9b52ff5d0837c188edd3b02f722"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets/cupcake-kitchen-bg.png",
+      "sha256": "56637425b28189a61f6dd8ff516bcd3b8dcbd30016661868ac3c4e73490aaa28"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets/cupcake-tray.png",
+      "sha256": "896a273950fd2a019d9eb689b2cd8393b1339e2e4c212bc97781b9c36df803d6"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets/frosting-strawberry.png",
+      "sha256": "83af70a09deabaf431d95990b3107b3d066c6c1e38d3eaf4d6c34850d91483db"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets/frosting-vanilla.png",
+      "sha256": "5ac7fff3eeaca0d23230d561389571c81d4aef9ad8ee8dfa38526e9e134c1184"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets/mixing-bowl-batter.png",
+      "sha256": "42250e25dba1b5e48805dd54c7edba2f6a85b6ff4d674cf9e820644ca821b448"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets/piping-bag-vanilla.png",
+      "sha256": "ad6d09fe6a915292ebee14f593ea0284930d5cb8d165c3a61ee1e99fea437a94"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets/sprinkle-blue.png",
+      "sha256": "b44ac6357c60f4e4954505cab7f47618a7cebe343fcaa0db1e25cebe02bd6fe4"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets/sprinkle-purple.png",
+      "sha256": "65ac19192abb495abe7a07c5193de3c9294f274281e878ae755d97c39a106bdd"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets/sprinkle-yellow.png",
+      "sha256": "f044cd0a2b2b2c65168a8cbcc94b8f8497c51f9daf431b2b1d9a96034ddbd06a"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets/tool-whisk.png",
+      "sha256": "6fed50de2c4568b3fb527e1747068e90fbfa0efcb1d87fa48e7a56e39f853bb3"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/assets/topping-sprinkles.png",
+      "sha256": "c199270202234f02b148504ad41a1060369164a35c3d0698d05efa8301dec866"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/legacy.tsx",
+      "sha256": "59424018a06a5213bf82a1b42f1c12dda163f3ba4f5c53e88439a20c737fdf7f"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/main.tsx",
+      "sha256": "3c96878c83a54b655091f7b5df95527c5b165c2d9bec250f3c408f01bdf20e96"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/model.ts",
+      "sha256": "b766b6d9ea8b1210aa7c41c06e427a8b350a1663ffda882bd608fff0c23d2e47"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/style.css",
+      "sha256": "2654b798a6836c7eb43662a75abe6fd1b071be432b2aa5d8893f2986f020c104"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/three/App.tsx",
+      "sha256": "4277ce78c5f2aadab983e3d8f521a4b9150a212e1f62ba68baeef8951e419bdd"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/three/composition.json",
+      "sha256": "e4da92d8e1329307d72200465cdd7048cc8a79a602db3ce7d9e7e5070ac90124"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/three/graphics.ts",
+      "sha256": "1ba7c0659cf258c1d11c88d1f1aebe7b02e483d0462e1684733dff5650c2fc12"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/three/model.ts",
+      "sha256": "b31f2e3b809f038ae83837910e02d0ba25a2f7ce00674954d5a1c2e1a4ff7405"
+    },
+    {
+      "path": "src/games/cooking-v2/cupcake/three/style.css",
+      "sha256": "d2d335b1abc9948da6cfafa1b1b80c4663731883c3a9d5b98a1b101da8d88407"
+    },
+    {
+      "path": "src/games/cooking-v2/full/Dough.tsx",
+      "sha256": "96a3a0f9645fed742800adfdf05746b53fa630491dc5832cd4f95f9ce8c80179"
+    },
+    {
+      "path": "src/games/cooking-v2/full/Oven.tsx",
+      "sha256": "5224177b980e4f9f7028027711a85d9543459aa4fb81062fdfb50031c437d2bb"
+    },
+    {
+      "path": "src/games/cooking-v2/full/PizzaCanvas.tsx",
+      "sha256": "7d6f845dc95cc1796cd1e2d53a789a50cbd8c477e7845f23752a7c733c4bc623"
+    },
+    {
+      "path": "src/games/cooking-v2/full/full.css",
+      "sha256": "384c938bdce8f47fb592afb1837972dfdeef1b5c4be23513c8c9f56d70492070"
+    },
+    {
+      "path": "src/games/cooking-v2/full/main.tsx",
+      "sha256": "bdb4e4785632afe2b6f4fb7f0fb51f99d1e85cbac4acf052dbac412986376e13"
+    },
+    {
+      "path": "src/games/cooking-v2/full/plate.svg",
+      "sha256": "4e9baa29e8f44e99fb07a546ebc46a665d807d2f42b01112ec323d02655aca23"
+    },
+    {
+      "path": "src/games/cooking-v2/full/roller.svg",
+      "sha256": "58260f3cdd3785e65eaeb57e1fe6e8a81e1233fb4071e115a5b76534675ae290"
+    },
+    {
+      "path": "src/games/cooking-v2/full/session.ts",
+      "sha256": "c76daf2ce5e8e7313e48ddf02641e48ddfaf345e01ee1570375e11156007efa3"
+    },
+    {
+      "path": "src/games/cooking-v2/full/useSavedRecipe.ts",
+      "sha256": "e45a90030f4042b60587fd318085ccb5d614ecfe8576f5b2c8dfb074ed2d3a04"
+    },
+    {
+      "path": "src/games/cooking-v2/icecream/FinishStage.tsx",
+      "sha256": "f19aa10e0aca93fef81a97c6008cec3c07c91ad049c62ca567befab62e43955f"
+    },
+    {
+      "path": "src/games/cooking-v2/icecream/ToppingStage.tsx",
+      "sha256": "db8a2dcd3c0263fdb4404eb87d0047ace781c61fcb23efc80c3ff87e6f23072c"
+    },
+    {
+      "path": "src/games/cooking-v2/icecream/composition.ts",
+      "sha256": "80c8e7ab956aee3a2792509e332232bb0359016734cf6a07e2b84d8cb4ef5fe4"
+    },
+    {
+      "path": "src/games/cooking-v2/icecream/decoration-graphics.ts",
+      "sha256": "ab3e8fa31730edb5d1caf18f37216dee8005449ca9123c05731a4cccd11c8903"
+    },
+    {
+      "path": "src/games/cooking-v2/icecream/finish-image.ts",
+      "sha256": "4601dd904e8dac80597111cd4ca892d619c7b19ac37a71c4195904ac9ed1ea14"
+    },
+    {
+      "path": "src/games/cooking-v2/icecream/main.tsx",
+      "sha256": "96e7430d7f386d9fcb7ac77d7c5b26c22933352f6e7ca16f8d50b21269c6293c"
+    },
+    {
+      "path": "src/games/cooking-v2/icecream/model.ts",
+      "sha256": "205b15d9b897127acb4bf945b30d84cb9d084098e90ce8865310fbdf181e40ff"
+    },
+    {
+      "path": "src/games/cooking-v2/icecream/placement.ts",
+      "sha256": "3911b246cf82d7f2630ec8a6f1140af26611c35fef289895427485890372673d"
+    },
+    {
+      "path": "src/games/cooking-v2/icecream/style.css",
+      "sha256": "e4bd02ca9067f0b93df2415326466bb6dc9dabcb7db9cf4509e092d3e3ad5c93"
+    },
+    {
+      "path": "src/games/cooking-v2/icecream/toppings.ts",
+      "sha256": "d80f62803b874d417be1a87af3ea1777899c4d6e4573835d3926444420cfc006"
+    },
+    {
+      "path": "src/games/cooking-v2/main.tsx",
+      "sha256": "6d10090b9d6537084a8e539a5459fec79fa0f8f56f5a9d66f0b253ed2648b206"
+    },
+    {
+      "path": "src/games/cooking-v2/model.ts",
+      "sha256": "bcbaef25dcbc95f6e73087c5753dd51e3a5cfc53b4185672e087763c42028231"
+    },
+    {
+      "path": "src/games/cooking-v2/prototype.css",
+      "sha256": "ce5aea0cff1ccebdad99a41dfab07f59a4ac2846bc7a3ae8617c402d8d30d021"
+    },
+    {
+      "path": "src/games/cooking-v2/recipe-links.css",
+      "sha256": "cded05e0213350b857284ea6f118155e416958a1978c1921282e331ae1d7ef83"
+    },
+    {
+      "path": "src/games/cooking-v2/render.ts",
+      "sha256": "7ed24b3f2b5df0ae343739371e6e2c0f2b268752a337277217765f4f32c0375c"
+    },
+    {
+      "path": "tests/burger.spec.ts",
+      "sha256": "5ad76b8c88ceb1eaf3be6004a99146b2e72c6916b0f5c829323808c81053bae7"
+    },
+    {
+      "path": "tests/cooking-v2-full.spec.ts",
+      "sha256": "5f43c0a628d615bf71e9f62020376a848ca21f4fccd64371f9a42735cfedd8fe"
+    },
+    {
+      "path": "tests/cupcake-three.spec.ts",
+      "sha256": "3cecdacc7bdd3d84e5238f00f14c52c4dfebc952723f7329bd66a3e725bb0e07"
+    },
+    {
+      "path": "tests/icecream-finish-checks.ts",
+      "sha256": "200e43cabcc220b6d59ca0f4eb3fd9c16fca7678423ad856f984c6bc5be008ac"
+    },
+    {
+      "path": "tests/icecream-placement-checks.ts",
+      "sha256": "e08b8c598c61cf892ef2a5806fb2a19591bde6856450103a214e17cacf6925d4"
+    },
+    {
+      "path": "tests/icecream-toppings.spec.ts",
+      "sha256": "1aa554d297efad269bcbfd08d384b0ce3482206f4dc286f5346b61833eb6c716"
+    },
+    {
+      "path": "tests/icecream.spec.ts",
+      "sha256": "016823ffb004c50d6c7ef32d63e38f3b4e79e5c99fdeac1373d207c5f9fd9381"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "ea9bf5dcbef68482590bdad190a34851421b66d8e042c49e8a708c9b003166df"
+    }
+  ],
+  "excluded": [
+    ".github/workflows/check.yml",
+    "README.md",
+    "docs/GALAXY-TAB-OFFLINE.md",
+    "docs/GITHUB-SETUP.md",
+    "docs/VERIFICATION.md",
+    "docs/brick-breaker/README.md",
+    "docs/brick-breaker/finale.png",
+    "docs/brick-breaker/live-phone-landscape.png",
+    "docs/brick-breaker/live-phone.png",
+    "docs/brick-breaker/live-small-phone.png",
+    "docs/brick-breaker/live-tablet-16x9.png",
+    "docs/brick-breaker/live-tablet.png",
+    "docs/brick-breaker/paused.png",
+    "docs/brick-breaker/phone-touch.png",
+    "docs/brick-breaker/simulation.json",
+    "docs/brick-breaker/stage-01.png",
+    "docs/brick-breaker/stage-02.png",
+    "docs/brick-breaker/stage-03.png",
+    "docs/brick-breaker/stage-04.png",
+    "docs/brick-breaker/stage-05.png",
+    "docs/brick-breaker/stage-06.png",
+    "docs/brick-breaker/stage-07.png",
+    "docs/brick-breaker/stage-08.png",
+    "docs/brick-breaker/stage-09.png",
+    "docs/brick-breaker/stage-10.png",
+    "docs/brick-breaker/stage-clear.png",
+    "docs/brick-breaker/stage-gallery.png",
+    "docs/brick-final-tuning/README.md",
+    "docs/brick-speed-restart/README.md",
+    "docs/brick-speed-restart/browser-speed-audit.json",
+    "docs/brick-speed-restart/confirm-phone-landscape.png",
+    "docs/brick-speed-restart/confirm-phone.png",
+    "docs/brick-speed-restart/confirm-small-phone.png",
+    "docs/brick-speed-restart/confirm-tablet-16x9.png",
+    "docs/brick-speed-restart/confirm-tablet.png",
+    "docs/brick-speed-restart/ready-phone-landscape.png",
+    "docs/brick-speed-restart/ready-phone.png",
+    "docs/brick-speed-restart/ready-small-phone.png",
+    "docs/brick-speed-restart/ready-tablet-16x9.png",
+    "docs/brick-speed-restart/ready-tablet.png",
+    "docs/brick-speed-restart/speed-audit.json",
+    "docs/brick-two-balls/README.md",
+    "docs/brick-two-balls/two-balls-tablet.png",
+    "docs/burger-prototype/01-grill-start.png",
+    "docs/burger-prototype/02-grill-done.png",
+    "docs/burger-prototype/03-choose.png",
+    "docs/burger-prototype/04-three-layers.png",
+    "docs/burger-prototype/05-seven-layers.png",
+    "docs/burger-prototype/06-complete.png",
+    "docs/burger-prototype/README.md",
+    "docs/burger-prototype/asset-audit.json",
+    "docs/burger-prototype/finished-burger.png",
+    "docs/burger-prototype/original-assets.png",
+    "docs/burger-prototype/phone-choose.png",
+    "docs/burger-prototype/phone-complete.png",
+    "docs/burger-prototype/phone-landscape-choose.png",
+    "docs/burger-prototype/phone-landscape-complete.png",
+    "docs/burger-prototype/phone-landscape-stack.png",
+    "docs/burger-prototype/phone-stack.png",
+    "docs/burger-prototype/small-phone-choose.png",
+    "docs/burger-prototype/small-phone-complete.png",
+    "docs/burger-prototype/small-phone-stack.png",
+    "docs/burger-prototype/tablet-16x9-choose.png",
+    "docs/burger-prototype/tablet-16x9-complete.png",
+    "docs/burger-prototype/tablet-16x9-stack.png",
+    "docs/burger-prototype/tablet-choose.png",
+    "docs/burger-prototype/tablet-complete.png",
+    "docs/burger-prototype/tablet-stack.png",
+    "docs/burger-sauce-fit/README.md",
+    "docs/burger-sauce-fit/after/cheese-diagnostic.png",
+    "docs/burger-sauce-fit/after/complete.png",
+    "docs/burger-sauce-fit/after/export.png",
+    "docs/burger-sauce-fit/after/ketchup-once.png",
+    "docs/burger-sauce-fit/after/mixed.png",
+    "docs/burger-sauce-fit/after/mustard-once.png",
+    "docs/burger-sauce-fit/after/mustard-three.png",
+    "docs/burger-sauce-fit/after/under-cheese.png",
+    "docs/burger-sauce-fit/after/under-stack.png",
+    "docs/burger-sauce-fit/before/cheese-diagnostic.png",
+    "docs/burger-sauce-fit/before/complete.png",
+    "docs/burger-sauce-fit/before/export.png",
+    "docs/burger-sauce-fit/before/ketchup-once.png",
+    "docs/burger-sauce-fit/before/mixed.png",
+    "docs/burger-sauce-fit/before/mustard-once.png",
+    "docs/burger-sauce-fit/before/mustard-three.png",
+    "docs/burger-sauce-fit/before/under-cheese.png",
+    "docs/burger-sauce-fit/before/under-stack.png",
+    "docs/burger-sauces/README.md",
+    "docs/burger-sauces/asset-audit.json",
+    "docs/burger-sauces/complete.png",
+    "docs/burger-sauces/covered-by-tomato.png",
+    "docs/burger-sauces/finished-burger.png",
+    "docs/burger-sauces/ketchup-only.png",
+    "docs/burger-sauces/mayonnaise-only.png",
+    "docs/burger-sauces/mustard-only.png",
+    "docs/burger-sauces/phone-complete.png",
+    "docs/burger-sauces/phone-landscape-complete.png",
+    "docs/burger-sauces/phone-landscape-stack.png",
+    "docs/burger-sauces/phone-stack.png",
+    "docs/burger-sauces/remove-list.png",
+    "docs/burger-sauces/tablet-complete.png",
+    "docs/burger-sauces/tablet-stack.png",
+    "docs/burger-sauces/three-sauces.png",
+    "docs/coloring-v3/originals/butterfly.png",
+    "docs/coloring-v3/originals/dinosaur.png",
+    "docs/coloring-v3/originals/fire.png",
+    "docs/coloring-v3/originals/police.png",
+    "docs/coloring-v3/prompts.json",
+    "docs/coloring-v4-final/README.md",
+    "docs/coloring-v4-final/artwork-provenance.json",
+    "docs/coloring-v4-final/baby-dinosaur-complete.png",
+    "docs/coloring-v4-final/butterfly-manifest.json",
+    "docs/coloring-v4-final/dinosaur-manifest.json",
+    "docs/coloring-v4-final/fire-city-larger.png",
+    "docs/coloring-v4-final/fire-manifest.json",
+    "docs/coloring-v4-final/fire-robot-complete.png",
+    "docs/coloring-v4-final/gallery-phone-landscape.png",
+    "docs/coloring-v4-final/gallery-phone.png",
+    "docs/coloring-v4-final/gallery-small-phone.png",
+    "docs/coloring-v4-final/gallery-tablet-16x9.png",
+    "docs/coloring-v4-final/gallery-tablet.png",
+    "docs/coloring-v4-final/game-phone-landscape.png",
+    "docs/coloring-v4-final/game-phone.png",
+    "docs/coloring-v4-final/game-small-phone.png",
+    "docs/coloring-v4-final/game-tablet-16x9.png",
+    "docs/coloring-v4-final/game-tablet.png",
+    "docs/coloring-v4-final/garden-butterfly-complete.png",
+    "docs/coloring-v4-final/police-car-robot-complete.png",
+    "docs/coloring-v4-final/police-manifest.json",
+    "docs/coloring-v4-final/police-offline-export.png",
+    "docs/coloring-v4-final/wide-baby-dinosaur-start.png",
+    "docs/coloring-v4-final/wide-fire-robot-start.png",
+    "docs/coloring-v4-final/wide-garden-butterfly-start.png",
+    "docs/coloring-v4-final/wide-police-car-robot-start.png",
+    "docs/coloring-v4-preview/README.md",
+    "docs/coloring-v4-preview/butterfly-meadow.png",
+    "docs/coloring-v4-preview/dinosaur-trees.png",
+    "docs/coloring-v4-preview/fire-city.png",
+    "docs/coloring-v4-preview/police-city.png",
+    "docs/coloring-v4-preview/prompts.json",
+    "docs/cooking-meals/README.md",
+    "docs/cooking-meals/sandwich-complete.png",
+    "docs/cooking-meals/sandwich-phone-landscape.png",
+    "docs/cooking-meals/sandwich-phone.png",
+    "docs/cooking-meals/sandwich-small-phone.png",
+    "docs/cooking-meals/sandwich-stack.png",
+    "docs/cooking-meals/sandwich-tablet-16x9.png",
+    "docs/cooking-meals/sandwich-tablet.png",
+    "docs/cooking-meals/skewer-complete.png",
+    "docs/cooking-meals/skewer-grilling.png",
+    "docs/cooking-meals/skewer-phone-landscape.png",
+    "docs/cooking-meals/skewer-phone.png",
+    "docs/cooking-meals/skewer-small-phone.png",
+    "docs/cooking-meals/skewer-tablet-16x9.png",
+    "docs/cooking-meals/skewer-tablet.png",
+    "docs/cooking-meals/skewer-thread.png",
+    "docs/cooking-meals/spaghetti-boil.png",
+    "docs/cooking-meals/spaghetti-chop.png",
+    "docs/cooking-meals/spaghetti-complete.png",
+    "docs/cooking-meals/spaghetti-phone-landscape.png",
+    "docs/cooking-meals/spaghetti-phone.png",
+    "docs/cooking-meals/spaghetti-sauce-tablet-16x9.png",
+    "docs/cooking-meals/spaghetti-saute.png",
+    "docs/cooking-meals/spaghetti-small-phone.png",
+    "docs/cooking-meals/spaghetti-tablet-16x9.png",
+    "docs/cooking-meals/spaghetti-tablet.png",
+    "docs/cooking-touch/README.md",
+    "docs/cooking-touch/complete-eight-slices.png",
+    "docs/cooking-touch/cutting-guides.png",
+    "docs/cooking-touch/dough-rolled.png",
+    "docs/cooking-touch/dough-start.png",
+    "docs/cooking-touch/oven-baking.png",
+    "docs/cooking-touch/oven-ready.png",
+    "docs/cooking-touch/pizza-phone-landscape.png",
+    "docs/cooking-touch/pizza-phone.png",
+    "docs/cooking-touch/pizza-small-phone.png",
+    "docs/cooking-touch/pizza-tablet-16x9.png",
+    "docs/cooking-touch/pizza-tablet.png",
+    "docs/cooking-touch/sauce-partial.png",
+    "docs/cooking-touch/sauce-tablet-16x9.png",
+    "docs/cooking-touch/selection-after-complete.png",
+    "docs/cooking-touch/toppings-cream.png",
+    "docs/cooking-v2-complete/REVIEW.md",
+    "docs/cooking-v2-full/01-dough-ball.png",
+    "docs/cooking-v2-full/01-dough-flat.png",
+    "docs/cooking-v2-full/01-dough-middle.png",
+    "docs/cooking-v2-full/02-sauce.png",
+    "docs/cooking-v2-full/03-toppings.png",
+    "docs/cooking-v2-full/04-oven-baking.png",
+    "docs/cooking-v2-full/04-oven-open.png",
+    "docs/cooking-v2-full/05-complete.png",
+    "docs/cooking-v2-full/README.md",
+    "docs/cooking-v2-full/asset-audit.json",
+    "docs/cooking-v2-full/finished-pizza.png",
+    "docs/cooking-v2-full/generation-prompts.json",
+    "docs/cooking-v2-full/phone-complete.png",
+    "docs/cooking-v2-full/phone-dough.png",
+    "docs/cooking-v2-full/phone-landscape-complete.png",
+    "docs/cooking-v2-full/phone-landscape-dough.png",
+    "docs/cooking-v2-full/phone-landscape-oven.png",
+    "docs/cooking-v2-full/phone-landscape-toppings.png",
+    "docs/cooking-v2-full/phone-oven.png",
+    "docs/cooking-v2-full/phone-toppings.png",
+    "docs/cooking-v2-full/small-phone-complete.png",
+    "docs/cooking-v2-full/small-phone-dough.png",
+    "docs/cooking-v2-full/small-phone-oven.png",
+    "docs/cooking-v2-full/small-phone-toppings.png",
+    "docs/cooking-v2-full/tablet-16x9-complete.png",
+    "docs/cooking-v2-full/tablet-16x9-dough.png",
+    "docs/cooking-v2-full/tablet-16x9-oven.png",
+    "docs/cooking-v2-full/tablet-16x9-toppings.png",
+    "docs/cooking-v2-full/tablet-complete.png",
+    "docs/cooking-v2-full/tablet-dough.png",
+    "docs/cooking-v2-full/tablet-oven.png",
+    "docs/cooking-v2-full/tablet-toppings.png",
+    "docs/cooking-v2-prototype/README.md",
+    "docs/cooking-v2-prototype/asset-audit.json",
+    "docs/cooking-v2-prototype/phone-landscape.png",
+    "docs/cooking-v2-prototype/phone.png",
+    "docs/cooking-v2-prototype/small-phone.png",
+    "docs/cooking-v2-prototype/tablet-16x9.png",
+    "docs/cooking-v2-prototype/tablet-complete.png",
+    "docs/cooking-v2-prototype/tablet-sauce-partial.png",
+    "docs/cooking-v2-prototype/tablet-toppings.png",
+    "docs/cooking/README.md",
+    "docs/cooking/pizza-complete-tablet.png",
+    "docs/cooking/pizza-phone-landscape.png",
+    "docs/cooking/pizza-phone.png",
+    "docs/cooking/pizza-small-phone.png",
+    "docs/cooking/pizza-tablet-16x9.png",
+    "docs/cooking/pizza-tablet.png",
+    "docs/cooking/recipe-selection.png",
+    "docs/cupcake-polish/README.md",
+    "docs/cupcake-polish/after/phone-baked.png",
+    "docs/cupcake-polish/after/phone-complete.png",
+    "docs/cupcake-polish/after/phone-inside.png",
+    "docs/cupcake-polish/after/phone-landscape-baked.png",
+    "docs/cupcake-polish/after/phone-landscape-complete.png",
+    "docs/cupcake-polish/after/phone-landscape-inside.png",
+    "docs/cupcake-polish/after/phone-landscape-metrics.json",
+    "docs/cupcake-polish/after/phone-landscape-open.png",
+    "docs/cupcake-polish/after/phone-landscape-oven.png",
+    "docs/cupcake-polish/after/phone-metrics.json",
+    "docs/cupcake-polish/after/phone-open.png",
+    "docs/cupcake-polish/after/phone-oven.png",
+    "docs/cupcake-polish/after/small-phone-baked.png",
+    "docs/cupcake-polish/after/small-phone-complete.png",
+    "docs/cupcake-polish/after/small-phone-inside.png",
+    "docs/cupcake-polish/after/small-phone-metrics.json",
+    "docs/cupcake-polish/after/small-phone-open.png",
+    "docs/cupcake-polish/after/small-phone-oven.png",
+    "docs/cupcake-polish/after/tablet-baked.png",
+    "docs/cupcake-polish/after/tablet-complete.png",
+    "docs/cupcake-polish/after/tablet-inside.png",
+    "docs/cupcake-polish/after/tablet-metrics.json",
+    "docs/cupcake-polish/after/tablet-open.png",
+    "docs/cupcake-polish/after/tablet-oven.png",
+    "docs/cupcake-polish/after/tablet-wide-baked.png",
+    "docs/cupcake-polish/after/tablet-wide-complete.png",
+    "docs/cupcake-polish/after/tablet-wide-inside.png",
+    "docs/cupcake-polish/after/tablet-wide-metrics.json",
+    "docs/cupcake-polish/after/tablet-wide-open.png",
+    "docs/cupcake-polish/after/tablet-wide-oven.png",
+    "docs/cupcake-polish/before/phone-baked.png",
+    "docs/cupcake-polish/before/phone-complete.png",
+    "docs/cupcake-polish/before/phone-inside.png",
+    "docs/cupcake-polish/before/phone-landscape-baked.png",
+    "docs/cupcake-polish/before/phone-landscape-complete.png",
+    "docs/cupcake-polish/before/phone-landscape-inside.png",
+    "docs/cupcake-polish/before/phone-landscape-metrics.json",
+    "docs/cupcake-polish/before/phone-landscape-open.png",
+    "docs/cupcake-polish/before/phone-landscape-oven.png",
+    "docs/cupcake-polish/before/phone-metrics.json",
+    "docs/cupcake-polish/before/phone-open.png",
+    "docs/cupcake-polish/before/phone-oven.png",
+    "docs/cupcake-polish/before/small-phone-baked.png",
+    "docs/cupcake-polish/before/small-phone-complete.png",
+    "docs/cupcake-polish/before/small-phone-inside.png",
+    "docs/cupcake-polish/before/small-phone-metrics.json",
+    "docs/cupcake-polish/before/small-phone-open.png",
+    "docs/cupcake-polish/before/small-phone-oven.png",
+    "docs/cupcake-polish/before/tablet-baked.png",
+    "docs/cupcake-polish/before/tablet-complete.png",
+    "docs/cupcake-polish/before/tablet-inside.png",
+    "docs/cupcake-polish/before/tablet-metrics.json",
+    "docs/cupcake-polish/before/tablet-open.png",
+    "docs/cupcake-polish/before/tablet-oven.png",
+    "docs/cupcake-polish/before/tablet-wide-baked.png",
+    "docs/cupcake-polish/before/tablet-wide-complete.png",
+    "docs/cupcake-polish/before/tablet-wide-inside.png",
+    "docs/cupcake-polish/before/tablet-wide-metrics.json",
+    "docs/cupcake-polish/before/tablet-wide-open.png",
+    "docs/cupcake-polish/before/tablet-wide-oven.png",
+    "docs/cupcake-polish/comparison.png",
+    "docs/cupcake-polish/full-test.log",
+    "docs/cupcake-polish/retry-test.log",
+    "docs/cupcake-prototype/01-mix-start.png",
+    "docs/cupcake-prototype/01b-mixing-touch.png",
+    "docs/cupcake-prototype/02-mix-done.png",
+    "docs/cupcake-prototype/03-cup-filled.png",
+    "docs/cupcake-prototype/04-baking.png",
+    "docs/cupcake-prototype/05-baked.png",
+    "docs/cupcake-prototype/06-vanilla.png",
+    "docs/cupcake-prototype/07-strawberry.png",
+    "docs/cupcake-prototype/08-sprinkles.png",
+    "docs/cupcake-prototype/09-complete.png",
+    "docs/cupcake-prototype/PR-BODY.md",
+    "docs/cupcake-prototype/PR-CREATE.md",
+    "docs/cupcake-prototype/README.md",
+    "docs/cupcake-prototype/asset-audit.json",
+    "docs/cupcake-prototype/finished-cupcake.png",
+    "docs/cupcake-prototype/original-assets.png",
+    "docs/cupcake-prototype/phone-complete.png",
+    "docs/cupcake-prototype/phone-decorate.png",
+    "docs/cupcake-prototype/phone-landscape-complete.png",
+    "docs/cupcake-prototype/phone-landscape-decorate.png",
+    "docs/cupcake-prototype/png-compare.png",
+    "docs/cupcake-prototype/png-comparison.json",
+    "docs/cupcake-prototype/reference-comparison.png",
+    "docs/cupcake-prototype/small-phone-complete.png",
+    "docs/cupcake-prototype/small-phone-decorate.png",
+    "docs/cupcake-prototype/tablet-complete.png",
+    "docs/cupcake-prototype/tablet-decorate.png",
+    "docs/cupcake-prototype/tablet-wide-complete.png",
+    "docs/cupcake-prototype/tablet-wide-decorate.png",
+    "docs/cupcake-prototype/validation.md",
+    "docs/cupcake-release.md",
+    "docs/dog-refinement/README.md",
+    "docs/dog-refinement/before-boy.png",
+    "docs/dog-refinement/before-dog.png",
+    "docs/dog-refinement/before-girl.png",
+    "docs/dog-refinement/before-tablet.png",
+    "docs/dog-refinement/bottoms-without-vest.png",
+    "docs/dog-refinement/combinations-phone.png",
+    "docs/dog-refinement/combinations-small-phone.png",
+    "docs/dog-refinement/combinations-tablet-16x9.png",
+    "docs/dog-refinement/combinations-tablet.png",
+    "docs/dog-refinement/dog-allinone-boots.png",
+    "docs/dog-refinement/dog-closeups.png",
+    "docs/dog-refinement/dog-phone-landscape.png",
+    "docs/dog-refinement/dog-phone.png",
+    "docs/dog-refinement/dog-small-phone.png",
+    "docs/dog-refinement/dog-tablet-16x9.png",
+    "docs/dog-refinement/dog-tablet.png",
+    "docs/dog-refinement/drag-fitting.png",
+    "docs/dog-refinement/finished-tablet.png",
+    "docs/dog-refinement/fitting-phone-landscape.png",
+    "docs/dog-refinement/fitting-phone.png",
+    "docs/dog-refinement/fitting-small-phone.png",
+    "docs/dog-refinement/fitting-tablet-16x9.png",
+    "docs/dog-refinement/fitting-tablet.png",
+    "docs/dog-refinement/hat-seats.png",
+    "docs/dog-refinement/live-fitted-preview.png",
+    "docs/dog-refinement/phone-touch.png",
+    "docs/dog-refinement/photo-screen.png",
+    "docs/dog-refinement/portrait-one-friend.png",
+    "docs/dog-refinement/portrait-spring.png",
+    "docs/dog-refinement/season-choice.png",
+    "docs/dog-refinement/two-piece.png",
+    "docs/dog-refinement/wardrobe-boy.png",
+    "docs/dog-refinement/wardrobe-dog.png",
+    "docs/dog-refinement/wardrobe-girl.png",
+    "docs/dressup-fitting/README.md",
+    "docs/dressup-fitting/before-dog.png",
+    "docs/dressup-fitting/before-tablet.png",
+    "docs/dressup-fitting/bottoms-without-vest.png",
+    "docs/dressup-fitting/combinations-phone.png",
+    "docs/dressup-fitting/combinations-small-phone.png",
+    "docs/dressup-fitting/combinations-tablet-16x9.png",
+    "docs/dressup-fitting/combinations-tablet.png",
+    "docs/dressup-fitting/dog-allinone-boots.png",
+    "docs/dressup-fitting/drag-fitting.png",
+    "docs/dressup-fitting/finished-tablet.png",
+    "docs/dressup-fitting/fitting-phone-landscape.png",
+    "docs/dressup-fitting/fitting-phone.png",
+    "docs/dressup-fitting/fitting-small-phone.png",
+    "docs/dressup-fitting/fitting-tablet-16x9.png",
+    "docs/dressup-fitting/fitting-tablet.png",
+    "docs/dressup-fitting/hat-seats.png",
+    "docs/dressup-fitting/live-fitted-preview.png",
+    "docs/dressup-fitting/phone-touch.png",
+    "docs/dressup-fitting/photo-screen.png",
+    "docs/dressup-fitting/portrait-one-friend.png",
+    "docs/dressup-fitting/portrait-spring.png",
+    "docs/dressup-fitting/season-choice.png",
+    "docs/dressup-fitting/two-piece.png",
+    "docs/dressup-fitting/wardrobe-boy.png",
+    "docs/dressup-fitting/wardrobe-dog.png",
+    "docs/dressup-fitting/wardrobe-girl.png",
+    "docs/dressup-seasons/README.md",
+    "docs/dressup-seasons/autumn-phone.png",
+    "docs/dressup-seasons/autumn-tablet.png",
+    "docs/dressup-seasons/bottoms-without-vest.png",
+    "docs/dressup-seasons/combinations-phone.png",
+    "docs/dressup-seasons/combinations-small-phone.png",
+    "docs/dressup-seasons/combinations-tablet-16x9.png",
+    "docs/dressup-seasons/combinations-tablet.png",
+    "docs/dressup-seasons/dog-allinone-boots.png",
+    "docs/dressup-seasons/dog-closeups.png",
+    "docs/dressup-seasons/dog-phone-landscape.png",
+    "docs/dressup-seasons/dog-phone.png",
+    "docs/dressup-seasons/dog-small-phone.png",
+    "docs/dressup-seasons/dog-tablet-16x9.png",
+    "docs/dressup-seasons/dog-tablet.png",
+    "docs/dressup-seasons/drag-fitting.png",
+    "docs/dressup-seasons/finished-tablet.png",
+    "docs/dressup-seasons/fitting-phone-landscape.png",
+    "docs/dressup-seasons/fitting-phone.png",
+    "docs/dressup-seasons/fitting-small-phone.png",
+    "docs/dressup-seasons/fitting-tablet-16x9.png",
+    "docs/dressup-seasons/fitting-tablet.png",
+    "docs/dressup-seasons/handbag-touch-phone.png",
+    "docs/dressup-seasons/hat-seats.png",
+    "docs/dressup-seasons/hoodie-dress-handbag.png",
+    "docs/dressup-seasons/item-counts.json",
+    "docs/dressup-seasons/landscape-phone.png",
+    "docs/dressup-seasons/live-fitted-preview.png",
+    "docs/dressup-seasons/phone-touch.png",
+    "docs/dressup-seasons/photo-screen.png",
+    "docs/dressup-seasons/portrait-one-friend.png",
+    "docs/dressup-seasons/portrait-spring.png",
+    "docs/dressup-seasons/season-choice.png",
+    "docs/dressup-seasons/short-tablet.png",
+    "docs/dressup-seasons/small-phone.png",
+    "docs/dressup-seasons/spring-phone.png",
+    "docs/dressup-seasons/spring-tablet.png",
+    "docs/dressup-seasons/summer-phone.png",
+    "docs/dressup-seasons/summer-tablet.png",
+    "docs/dressup-seasons/two-piece.png",
+    "docs/dressup-seasons/wardrobe-boy.png",
+    "docs/dressup-seasons/wardrobe-dog.png",
+    "docs/dressup-seasons/wardrobe-girl.png",
+    "docs/dressup-seasons/winter-phone.png",
+    "docs/dressup-seasons/winter-portrait.png",
+    "docs/dressup-seasons/winter-tablet.png",
+    "docs/dressup-spring/README.md",
+    "docs/dressup-spring/dog-allinone-boots.png",
+    "docs/dressup-spring/drag-fitting.png",
+    "docs/dressup-spring/finished-tablet.png",
+    "docs/dressup-spring/fitting-phone-landscape.png",
+    "docs/dressup-spring/fitting-phone.png",
+    "docs/dressup-spring/fitting-small-phone.png",
+    "docs/dressup-spring/fitting-tablet-16x9.png",
+    "docs/dressup-spring/fitting-tablet.png",
+    "docs/dressup-spring/phone-touch.png",
+    "docs/dressup-spring/photo-screen.png",
+    "docs/dressup-spring/portrait-one-friend.png",
+    "docs/dressup-spring/portrait-spring.png",
+    "docs/dressup-spring/season-choice.png",
+    "docs/dressup-spring/two-piece.png",
+    "docs/dressup-spring/wardrobe-boy.png",
+    "docs/dressup-spring/wardrobe-dog.png",
+    "docs/dressup-spring/wardrobe-girl.png",
+    "docs/home-carousel/README.md",
+    "docs/home-carousel/layout-phone-landscape.png",
+    "docs/home-carousel/layout-phone.png",
+    "docs/home-carousel/layout-small-phone.png",
+    "docs/home-carousel/layout-small-tablet.png",
+    "docs/home-carousel/layout-tablet-16x9.png",
+    "docs/home-carousel/layout-tablet.png",
+    "docs/home-carousel/phone-landscape.png",
+    "docs/home-carousel/phone.png",
+    "docs/home-carousel/small-phone.png",
+    "docs/home-carousel/tablet-16x9.png",
+    "docs/home-carousel/tablet.png",
+    "docs/home-carousel/thirteen-games.png",
+    "docs/icecream-release/README.md",
+    "docs/icecream-release/assets.json",
+    "docs/memory-card/README.md",
+    "docs/memory-card/art-animals.png",
+    "docs/memory-card/art-dinosaurs.png",
+    "docs/memory-card/art-fruits.png",
+    "docs/memory-card/art-vehicles.png",
+    "docs/memory-card/card-sizes.json",
+    "docs/memory-card/finale.png",
+    "docs/memory-card/home.png",
+    "docs/memory-card/phone-landscape.png",
+    "docs/memory-card/phone.png",
+    "docs/memory-card/small-phone.png",
+    "docs/memory-card/stage-02-preview.png",
+    "docs/memory-card/stage-08-preview.png",
+    "docs/memory-card/stage-15-covered.png",
+    "docs/memory-card/stage-15-play.png",
+    "docs/memory-card/stage-8-covered.png",
+    "docs/memory-card/stage-8-play.png",
+    "docs/memory-card/stage-clear.png",
+    "docs/memory-card/tablet-16x9.png",
+    "docs/memory-card/tablet.png",
+    "docs/palette-zoom-baby-dinosaur.png",
+    "docs/palette-zoom-fire-robot.png",
+    "docs/palette-zoom-garden-butterfly.png",
+    "docs/palette-zoom-police-car-robot.png",
+    "docs/screenshots/phone-landscape.png",
+    "docs/screenshots/phone.png",
+    "docs/screenshots/small-phone.png",
+    "docs/screenshots/tablet-16x9.png",
+    "docs/screenshots/tablet.png",
+    "docs/wardrobe-navigation/README.md",
+    "docs/wardrobe-navigation/autumn-tablet.png",
+    "docs/wardrobe-navigation/phone-landscape.png",
+    "docs/wardrobe-navigation/phone.png",
+    "docs/wardrobe-navigation/short-tablet.png",
+    "docs/wardrobe-navigation/small-phone.png",
+    "docs/wardrobe-navigation/spring-tablet.png",
+    "docs/wardrobe-navigation/summer-tablet.png",
+    "docs/wardrobe-navigation/winter-tablet.png",
+    "docs/wardrobe-space/README.md",
+    "docs/wardrobe-space/autumn-tablet.png",
+    "docs/wardrobe-space/phone-landscape.png",
+    "docs/wardrobe-space/phone.png",
+    "docs/wardrobe-space/short-tablet.png",
+    "docs/wardrobe-space/small-phone.png",
+    "docs/wardrobe-space/spring-tablet.png",
+    "docs/wardrobe-space/summer-tablet.png",
+    "docs/wardrobe-space/winter-tablet.png",
+    "index.html",
+    "playwright.config.ts",
+    "public/assets/coloring-v4/butterfly.png",
+    "public/assets/coloring-v4/dinosaur.png",
+    "public/assets/coloring-v4/fire.png",
+    "public/assets/coloring-v4/police.png",
+    "public/assets/reference/brick-breaker/README.md",
+    "public/assets/reference/brick-breaker/brick-breaker-design.png",
+    "public/assets/reference/cooking-v2/README.md",
+    "public/assets/reference/cooking-v2/burger/README.md",
+    "public/assets/reference/cooking-v2/burger/burger-a-grilling.png",
+    "public/assets/reference/cooking-v2/burger/burger-b-stacking.png",
+    "public/assets/reference/cooking-v2/burger/burger-c-complete.png",
+    "public/assets/reference/cooking-v2/cupcake/README.md",
+    "public/assets/reference/cooking-v2/cupcake/cupcake-a-mixing.png",
+    "public/assets/reference/cooking-v2/cupcake/cupcake-b-decorating.png",
+    "public/assets/reference/cooking-v2/cupcake/cupcake-c-complete.png",
+    "public/assets/reference/cooking-v2/pizza-oven-design.png",
+    "public/assets/reference/cooking-v2/pizza-sauce-design.png",
+    "public/assets/reference/cooking-v2/pizza-topping-design.png",
+    "public/assets/reference/memory-card/README.md",
+    "public/assets/reference/memory-card/memory-card-design.png",
+    "public/icon-192.png",
+    "public/icon-512.png",
+    "public/icon.svg",
+    "public/manifest.webmanifest",
+    "scripts/capture-cupcake-comparison.mjs",
+    "scripts/capture-cupcake-polish.mjs",
+    "scripts/coloring-scenes/README.md",
+    "scripts/coloring-scenes/generate.py",
+    "scripts/coloring-scenes/requirements.txt",
+    "scripts/lib/png-rgba.mjs",
+    "scripts/prepare-burger-sauces.mjs",
+    "scripts/prepare-burger.mjs",
+    "scripts/prepare-cooking-v2-assets.mjs",
+    "scripts/prepare-cooking-v2-full.mjs",
+    "scripts/prepare-cupcake.mjs",
+    "scripts/verify-dist.mjs",
+    "src/Art.tsx",
+    "src/components/GameCarousel.tsx",
+    "src/components/game-carousel.css",
+    "src/games/GameSettings.tsx",
+    "src/games/brick-breaker/Backdrop.tsx",
+    "src/games/brick-breaker/audio.ts",
+    "src/games/brick-breaker/brick-breaker.css",
+    "src/games/brick-breaker/engine.ts",
+    "src/games/brick-breaker/index.tsx",
+    "src/games/brick-breaker/progress.ts",
+    "src/games/brick-breaker/render.ts",
+    "src/games/brick-breaker/speed.ts",
+    "src/games/brick-breaker/stages.ts",
+    "src/games/brick-breaker/types.ts",
+    "src/games/coloring/Artwork.tsx",
+    "src/games/coloring/Coloring.tsx",
+    "src/games/coloring/coloring.css",
+    "src/games/coloring/data/drawings.ts",
+    "src/games/coloring/data/scenes/baby-dinosaur.json",
+    "src/games/coloring/data/scenes/fire-robot.json",
+    "src/games/coloring/data/scenes/garden-butterfly.json",
+    "src/games/coloring/data/scenes/police-car-robot.json",
+    "src/games/coloring/data/types.ts",
+    "src/games/coloring/engine.ts",
+    "src/games/coloring/export.ts",
+    "src/games/coloring/index.tsx",
+    "src/games/cooking/CookingGameLayout.tsx",
+    "src/games/cooking/CookingHome.tsx",
+    "src/games/cooking/components/Completion.tsx",
+    "src/games/cooking/components/FoodScene.tsx",
+    "src/games/cooking/components/IngredientArt.tsx",
+    "src/games/cooking/components/IngredientPanel.tsx",
+    "src/games/cooking/components/StepProgress.tsx",
+    "src/games/cooking/components/ToolArt.tsx",
+    "src/games/cooking/cooking.css",
+    "src/games/cooking/data/index.ts",
+    "src/games/cooking/data/pizza.ts",
+    "src/games/cooking/data/sandwich.ts",
+    "src/games/cooking/data/skewer.ts",
+    "src/games/cooking/data/spaghetti.ts",
+    "src/games/cooking/hooks/useCooking.ts",
+    "src/games/cooking/index.tsx",
+    "src/games/cooking/meal/FoodAssets.tsx",
+    "src/games/cooking/meal/MealPanel.tsx",
+    "src/games/cooking/meal/MealScene.tsx",
+    "src/games/cooking/meal/MealWorkshop.tsx",
+    "src/games/cooking/meal/meal.css",
+    "src/games/cooking/meal/model.ts",
+    "src/games/cooking/meal/useMeal.ts",
+    "src/games/cooking/pizza/PizzaPanel.tsx",
+    "src/games/cooking/pizza/PizzaWorkshop.tsx",
+    "src/games/cooking/pizza/pizza.css",
+    "src/games/cooking/pizza/types.ts",
+    "src/games/cooking/pizza/useOvenChime.ts",
+    "src/games/cooking/pizza/usePizzaWorkshop.ts",
+    "src/games/cooking/types.ts",
+    "src/games/dressup/Artwork.tsx",
+    "src/games/dressup/DogArtwork.tsx",
+    "src/games/dressup/FittedArtwork.tsx",
+    "src/games/dressup/WardrobeBrowser.tsx",
+    "src/games/dressup/data.ts",
+    "src/games/dressup/dressup.css",
+    "src/games/dressup/export.ts",
+    "src/games/dressup/index.tsx",
+    "src/games/dressup/model.ts",
+    "src/games/dressup/rig.ts",
+    "src/games/memory-card/Artwork.tsx",
+    "src/games/memory-card/Sky.tsx",
+    "src/games/memory-card/data.ts",
+    "src/games/memory-card/index.tsx",
+    "src/games/memory-card/memory-card.css",
+    "src/games/memory-card/model.ts",
+    "src/games/registry.ts",
+    "src/main.tsx",
+    "src/storage.ts",
+    "src/styles.css",
+    "tests/bricks-engine.spec.ts",
+    "tests/bricks-speed-restart.spec.ts",
+    "tests/bricks.spec.ts",
+    "tests/coloring.spec.ts",
+    "tests/cooking-complete.config.ts",
+    "tests/cooking-complete.spec.ts",
+    "tests/cooking-v2.spec.ts",
+    "tests/cooking.spec.ts",
+    "tests/cupcake-release-smoke.spec.ts",
+    "tests/cupcake-release.config.ts",
+    "tests/dog-wardrobe.spec.ts",
+    "tests/dressup-fitting.spec.ts",
+    "tests/dressup-seasons.spec.ts",
+    "tests/dressup.spec.ts",
+    "tests/fixtures/home-carousel.tsx",
+    "tests/home-carousel.spec.ts",
+    "tests/home.spec.ts",
+    "tests/icecream-release.spec.ts",
+    "tests/landscape-art.spec.ts",
+    "tests/meals.spec.ts",
+    "tests/memory-model.spec.ts",
+    "tests/memory-visual.spec.ts",
+    "tests/memory.spec.ts",
+    "tests/palette-zoom.spec.ts",
+    "tests/scene-background.spec.ts",
+    "tests/wardrobe-navigation.spec.ts",
+    "vite.config.ts",
+    "tests/burger-sauce-fit.spec.ts",
+    "tests/burger-sauces.spec.ts",
+    "tests/cupcake-polish.spec.ts",
+    "tests/cupcake.spec.ts",
+    "public/assets/cooking-v2/burger/README.md",
+    "public/assets/cooking-v2/burger/bacon.png",
+    "public/assets/cooking-v2/burger/bun-bottom.png",
+    "public/assets/cooking-v2/burger/bun-top.png",
+    "public/assets/cooking-v2/burger/cheese-stack.png",
+    "public/assets/cooking-v2/burger/cheese.png",
+    "public/assets/cooking-v2/burger/egg.png",
+    "public/assets/cooking-v2/burger/frying-pan.png",
+    "public/assets/cooking-v2/burger/lettuce-stack.png",
+    "public/assets/cooking-v2/burger/lettuce.png",
+    "public/assets/cooking-v2/burger/mushroom-group.png",
+    "public/assets/cooking-v2/burger/onion-group.png",
+    "public/assets/cooking-v2/burger/patty-cooked.png",
+    "public/assets/cooking-v2/burger/patty-raw.png",
+    "public/assets/cooking-v2/burger/pickle-group.png",
+    "public/assets/cooking-v2/burger/plate.png",
+    "public/assets/cooking-v2/burger/sauce-ketchup-bottle.png",
+    "public/assets/cooking-v2/burger/sauce-ketchup-bowl.png",
+    "public/assets/cooking-v2/burger/sauce-ketchup-drizzle.png",
+    "public/assets/cooking-v2/burger/sauce-mayonnaise-bottle.png",
+    "public/assets/cooking-v2/burger/sauce-mayonnaise-bowl.png",
+    "public/assets/cooking-v2/burger/sauce-mayonnaise-drizzle.png",
+    "public/assets/cooking-v2/burger/sauce-mustard-bottle.png",
+    "public/assets/cooking-v2/burger/sauce-mustard-bowl.png",
+    "public/assets/cooking-v2/burger/sauce-mustard-drizzle.png",
+    "public/assets/cooking-v2/burger/spatula.png",
+    "public/assets/cooking-v2/burger/tomato-stack.png",
+    "public/assets/cooking-v2/burger/tomato.png",
+    "public/assets/cooking-v2/cupcake/README.md",
+    "public/assets/cooking-v2/cupcake/cupcake-kitchen-bg.png",
+    "public/assets/cooking-v2/cupcake/cupcake-tray.png",
+    "public/assets/cooking-v2/cupcake/frosting-strawberry.png",
+    "public/assets/cooking-v2/cupcake/frosting-vanilla.png",
+    "public/assets/cooking-v2/cupcake/piping-bag-vanilla.png",
+    "public/assets/cooking-v2/cupcake/tool-whisk.png",
+    "public/assets/cooking-v2/cupcake/topping-sprinkles.png",
+    "public/assets/cooking-v2/pizza/README.md",
+    "public/assets/cooking-v2/pizza/full/cheese-melt.png",
+    "public/assets/cooking-v2/pizza/full/dough-baked.png",
+    "public/assets/cooking-v2/pizza/full/dough-ball.png",
+    "public/assets/cooking-v2/pizza/full/dough-mid.png",
+    "public/assets/cooking-v2/pizza/full/olive.png",
+    "public/assets/cooking-v2/pizza/full/onion.png",
+    "public/assets/cooking-v2/pizza/full/paprika.png",
+    "public/assets/cooking-v2/pizza/pizza-cheese-raw.png",
+    "public/assets/cooking-v2/pizza/pizza-cutting-board.png",
+    "public/assets/cooking-v2/pizza/pizza-dough-flat.png",
+    "public/assets/cooking-v2/pizza/pizza-prep-bg.png",
+    "public/assets/cooking-v2/pizza/pizza-sauce-tomato.png",
+    "public/assets/cooking-v2/pizza/tool-spoon.png",
+    "public/assets/cooking-v2/pizza/topping-mushroom.png",
+    "public/assets/cooking-v2/pizza/topping-pepperoni.png"
+  ],
+  "exclusionNotes": {
+    "unusedPublicOriginals": [
+      "public/assets/cooking-v2/burger/README.md",
+      "public/assets/cooking-v2/burger/bacon.png",
+      "public/assets/cooking-v2/burger/bun-bottom.png",
+      "public/assets/cooking-v2/burger/bun-top.png",
+      "public/assets/cooking-v2/burger/cheese-stack.png",
+      "public/assets/cooking-v2/burger/cheese.png",
+      "public/assets/cooking-v2/burger/egg.png",
+      "public/assets/cooking-v2/burger/frying-pan.png",
+      "public/assets/cooking-v2/burger/lettuce-stack.png",
+      "public/assets/cooking-v2/burger/lettuce.png",
+      "public/assets/cooking-v2/burger/mushroom-group.png",
+      "public/assets/cooking-v2/burger/onion-group.png",
+      "public/assets/cooking-v2/burger/patty-cooked.png",
+      "public/assets/cooking-v2/burger/patty-raw.png",
+      "public/assets/cooking-v2/burger/pickle-group.png",
+      "public/assets/cooking-v2/burger/plate.png",
+      "public/assets/cooking-v2/burger/sauce-ketchup-bottle.png",
+      "public/assets/cooking-v2/burger/sauce-ketchup-bowl.png",
+      "public/assets/cooking-v2/burger/sauce-ketchup-drizzle.png",
+      "public/assets/cooking-v2/burger/sauce-mayonnaise-bottle.png",
+      "public/assets/cooking-v2/burger/sauce-mayonnaise-bowl.png",
+      "public/assets/cooking-v2/burger/sauce-mayonnaise-drizzle.png",
+      "public/assets/cooking-v2/burger/sauce-mustard-bottle.png",
+      "public/assets/cooking-v2/burger/sauce-mustard-bowl.png",
+      "public/assets/cooking-v2/burger/sauce-mustard-drizzle.png",
+      "public/assets/cooking-v2/burger/spatula.png",
+      "public/assets/cooking-v2/burger/tomato-stack.png",
+      "public/assets/cooking-v2/burger/tomato.png",
+      "public/assets/cooking-v2/cupcake/README.md",
+      "public/assets/cooking-v2/cupcake/cupcake-kitchen-bg.png",
+      "public/assets/cooking-v2/cupcake/cupcake-tray.png",
+      "public/assets/cooking-v2/cupcake/frosting-strawberry.png",
+      "public/assets/cooking-v2/cupcake/frosting-vanilla.png",
+      "public/assets/cooking-v2/cupcake/piping-bag-vanilla.png",
+      "public/assets/cooking-v2/cupcake/tool-whisk.png",
+      "public/assets/cooking-v2/cupcake/topping-sprinkles.png",
+      "public/assets/cooking-v2/pizza/README.md",
+      "public/assets/cooking-v2/pizza/full/cheese-melt.png",
+      "public/assets/cooking-v2/pizza/full/dough-baked.png",
+      "public/assets/cooking-v2/pizza/full/dough-ball.png",
+      "public/assets/cooking-v2/pizza/full/dough-mid.png",
+      "public/assets/cooking-v2/pizza/full/olive.png",
+      "public/assets/cooking-v2/pizza/full/onion.png",
+      "public/assets/cooking-v2/pizza/full/paprika.png",
+      "public/assets/cooking-v2/pizza/pizza-cheese-raw.png",
+      "public/assets/cooking-v2/pizza/pizza-cutting-board.png",
+      "public/assets/cooking-v2/pizza/pizza-dough-flat.png",
+      "public/assets/cooking-v2/pizza/pizza-prep-bg.png",
+      "public/assets/cooking-v2/pizza/pizza-sauce-tomato.png",
+      "public/assets/cooking-v2/pizza/tool-spoon.png",
+      "public/assets/cooking-v2/pizza/topping-mushroom.png",
+      "public/assets/cooking-v2/pizza/topping-pepperoni.png"
+    ],
+    "reason": "Runtime imports the existing processed src sprites for pizza/burger/legacy cupcake. Keep only public files actually referenced by cupcake-three, icecream, home and temporary icon. Original source repository remains untouched."
+  },
+  "newOrIndependentFiles": [
+    ".gitattributes",
+    ".github/workflows/check.yml",
+    "README.md",
+    "docs/migration/FILES.json",
+    "docs/migration/LOCAL-CHECKS.json",
+    "docs/migration/PNG-CHECKS.json",
+    "docs/migration/RESULTS.md",
+    "docs/migration/REVIEW.md",
+    "docs/migration/screenshots/burger.png",
+    "docs/migration/screenshots/cupcake.png",
+    "docs/migration/screenshots/finish.png",
+    "docs/migration/screenshots/home-tablet.png",
+    "docs/migration/screenshots/icecream-export.png",
+    "docs/migration/screenshots/icecream.png",
+    "docs/migration/screenshots/phone-landscape.png",
+    "docs/migration/screenshots/phone-portrait.png",
+    "docs/migration/screenshots/pizza.png",
+    "index.html",
+    "playwright.config.ts",
+    "public/manifest.webmanifest",
+    "scripts/verify-dist.mjs",
+    "src/home.css",
+    "src/main.tsx",
+    "tests/extraction.spec.ts",
+    "vite.config.ts"
+  ],
+  "adaptedCopiedFiles": [
+    ".gitignore",
+    "package.json",
+    "prototypes/cooking-v2/burger/index.html",
+    "prototypes/cooking-v2/cupcake/index.html",
+    "prototypes/cooking-v2/icecream/index.html",
+    "prototypes/cooking-v2/index.html",
+    "prototypes/cooking-v2/kitchen/index.html",
+    "src/games/cooking-v2/Workbench.tsx",
+    "src/games/cooking-v2/burger/main.tsx",
+    "src/games/cooking-v2/cupcake/legacy.tsx",
+    "src/games/cooking-v2/cupcake/three/App.tsx",
+    "src/games/cooking-v2/full/main.tsx",
+    "src/games/cooking-v2/icecream/FinishStage.tsx",
+    "src/games/cooking-v2/icecream/main.tsx",
+    "tests/burger.spec.ts",
+    "tests/cooking-v2-full.spec.ts"
+  ],
+  "prChangedFileCount": 174
+}
