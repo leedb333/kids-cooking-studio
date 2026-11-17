@@ -1,0 +1,13 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.tsbuildinfo
+
+# Test output; curated review samples live only in docs/migration/.
+/docs/cooking-v2-full/
+/docs/burger-prototype/
+/docs/cupcake-polish/
+/docs/cupcake-three/
+/docs/burger-sauces/
+/docs/burger-sauce-fit/
