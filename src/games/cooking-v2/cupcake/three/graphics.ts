@@ -1,7 +1,8 @@
+import {renderDecorCup} from './toppings'
+import cookie from '../../../../../public/assets/cooking-v2/icecream/toppings/topping-choco-cookie.png'
 import {BAKE_MS} from './model'
 import metadata from './composition.json?raw'
 import {loadImages,type Images} from '../assets'
-import {renderCupcake} from '../Cupcake'
 import type {Work} from './model'
 import type {Ingredient} from '../model'
 import front from '../../../../../public/assets/cooking-v2/cupcake/three/cup-wrapper-front.png'
@@ -16,7 +17,7 @@ import flour from '../../../../../public/assets/cooking-v2/cupcake/three/ingredi
 import sugar from '../../../../../public/assets/cooking-v2/cupcake/three/ingredient-sugar.png'
 export const geometry=JSON.parse(metadata) as {cup:{contentClip:{startX:number;endX:number;bottomPerX:number[]}};tray:{anchors:number[][];cupScale:number;protectedFrontY:number}}
 // Bundled URLs join the existing offline cache without changing Pages/PWA settings.
-export const extraUrls={front,back,empty,tray3,rawBase,rawBowl,egg,milk,flour,sugar}
+export const extraUrls={front,back,empty,tray3,rawBase,rawBowl,egg,milk,flour,sugar,cookie}
 export const make=(w=1254,h=w)=>{const c=document.createElement('canvas');c.width=w;c.height=h;return c}
 const ctx=(c:HTMLCanvasElement)=>c.getContext('2d',{willReadFrequently:true})!
 // Food silhouettes use the approved cards as texture, never the card frame or label.
@@ -65,5 +66,5 @@ export function renderBowl(g:Graphics,w:Work,pour?:{id:Ingredient;progress:numbe
  return c
 }
 // This one composition is used on screen and for the actual transparent download.
-export function renderGroup(g:Graphics,w:Work,size=1400){const c=make(size),x=ctx(c);x.scale(size/1400,size/1400);x.imageSmoothingQuality='high';x.drawImage(g.images.plate,40,820,1320,420);const images={...g.images,plate:g.clear};w.cups.forEach((cup,i)=>{const sprite=renderCupcake(cup.decor.work,images,900);x.drawImage(sprite,[-30,390,810][i],400,620,620)});return c}
+export function renderGroup(g:Graphics,w:Work,size=1400){const c=make(size),x=ctx(c);x.scale(size/1400,size/1400);x.imageSmoothingQuality='high';x.drawImage(g.images.plate,40,820,1320,420);const images={...g.images,plate:g.clear};w.cups.forEach((cup,i)=>{const sprite=renderDecorCup(cup.decor.work,images,g.extra.cookie,900);x.drawImage(sprite,[-30,390,810][i],400,620,620)});return c}
 export async function downloadGroup(g:Graphics,w:Work){const c=renderGroup(g,w),blob=await new Promise<Blob>((resolve,reject)=>c.toBlob(b=>b?resolve(b):reject(Error('PNG')),'image/png')),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='내가-만든-컵케이크-세개.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000)}
