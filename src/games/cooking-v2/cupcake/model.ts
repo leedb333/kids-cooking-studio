@@ -1,3 +1,4 @@
+import type {ExtraPiece} from './three/toppings-model'
 export const storageKey='kids-game-playground:v1:game:cooking-v2:cupcake:prototype:r1'
 export const ingredients=[{id:'egg',name:'달걀'},{id:'milk',name:'우유'},{id:'flour',name:'밀가루'},{id:'sugar',name:'설탕'}] as const
 export type Ingredient=typeof ingredients[number]['id']
@@ -8,7 +9,7 @@ export type Decoration=typeof decorations[number]
 export type Step='mix'|'bake'|'decorate'|'complete'
 export type Phase='ready'|'open'|'inside'|'baking'|'done'
 export type Piece={id:number;kind:Decoration;u:number;v:number;rotation:number;size:number}
-export type Work={step:Step;ingredients:Ingredient[];mix:number;filled:boolean;oven:Phase;elapsed:number;cream:Cream;piping:number;sprinkles:Piece[];nextId:number}
+export type Work={step:Step;ingredients:Ingredient[];mix:number;filled:boolean;oven:Phase;elapsed:number;cream:Cream;piping:number;sprinkles:Piece[];nextId:number;toppings?:ExtraPiece[]}
 export type Session={version:1;work:Work;history:Work[];sound:boolean}
 const clamp=(n:number,a=0,b=1)=>Math.max(a,Math.min(b,n))
 export function fresh():Session{return {version:1,work:{step:'mix',ingredients:[],mix:0,filled:false,oven:'ready',elapsed:0,cream:'vanilla',piping:0,sprinkles:[],nextId:1},history:[],sound:true}}

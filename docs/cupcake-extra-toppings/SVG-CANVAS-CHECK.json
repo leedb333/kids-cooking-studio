@@ -1,0 +1,44 @@
+[
+  {
+    "cream": "vanilla",
+    "piping": 0.1,
+    "mean": 4.747234173325138,
+    "visibleRatio": 1.0034161490683229,
+    "visible": 3231
+  },
+  {
+    "cream": "vanilla",
+    "piping": 0.55,
+    "mean": 5.217924528301887,
+    "visibleRatio": 1.0072671638936699,
+    "visible": 5267
+  },
+  {
+    "cream": "vanilla",
+    "piping": 1,
+    "mean": 3.8573559126335035,
+    "visibleRatio": 0.984685031785783,
+    "visible": 10223
+  },
+  {
+    "cream": "strawberry",
+    "piping": 0.1,
+    "mean": 4.782605352199323,
+    "visibleRatio": 1.0015542430836182,
+    "visible": 3222
+  },
+  {
+    "cream": "strawberry",
+    "piping": 0.55,
+    "mean": 5.36586747215405,
+    "visibleRatio": 1.0095803793830236,
+    "visible": 5269
+  },
+  {
+    "cream": "strawberry",
+    "piping": 1,
+    "mean": 3.7855561970746727,
+    "visibleRatio": 0.9841086391216411,
+    "visible": 10218
+  }
+]

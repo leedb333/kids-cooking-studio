@@ -23,8 +23,13 @@ jobs:
         env:
           PLAYWRIGHT_JSON_OUTPUT_FILE: playwright-report/results.json
       - name: Existing cooking core checks
-        if: ${{ !startsWith(github.head_ref, 'feat/cooking-ui-layout-speed-v1') }}
+        if: ${{ !startsWith(github.head_ref, 'feat/cooking-ui-layout-speed-v1') && !startsWith(github.head_ref, 'feat/cupcake-extra-toppings') }}
         run: pnpm test --reporter=line,json
+        env:
+          PLAYWRIGHT_JSON_OUTPUT_FILE: playwright-report/results.json
+      - name: Cupcake topping and compatibility checks
+        if: startsWith(github.head_ref, 'feat/cupcake-extra-toppings')
+        run: pnpm exec playwright test --config tests/cupcake-extra.config.ts --reporter=line,json
         env:
           PLAYWRIGHT_JSON_OUTPUT_FILE: playwright-report/results.json
       - uses: actions/upload-artifact@v4
