@@ -1,0 +1,14 @@
+:root{--cook-ink:#744d47;--cook-pink:#ffe8e5;--cook-cream:#fffaf1;--cook-mint:#bcebd9;--cook-border:#deb0a9;--cook-focus:#237d70;--cook-control-font:14px;--cook-control-height:48px}
+body :is(.cv2-app,.cc-app,.ic-app) :is(.cv2-header,.cc-header,header,.cv2-actions,.cc-actions,.ic-actions) :is(button,a){font-size:var(--cook-control-font);min-height:var(--cook-control-height);border:2px solid var(--cook-border);border-radius:18px;background:linear-gradient(var(--cook-cream),var(--cook-pink));color:var(--cook-ink);font-weight:800;box-shadow:0 3px #cca39b;display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;max-width:100%}
+body :is(.cv2-actions,.cc-actions,.ic-actions){flex-wrap:wrap}
+body :is(.cv2-app,.cc-app,.ic-app) button:is(.cv2-next,.cc-next,.ic-next){background:linear-gradient(#eafff6,var(--cook-mint));border-color:#7fb9a7;box-shadow:0 3px #7eac9d;color:#345d50}
+body :is(.cv2-app,.cc-app,.ic-app) button[data-action=reset]{border-color:#cb8d94;color:#934b58;background:#fff0f0}
+body :is(.cv2-app,.cc-app,.ic-app) :is(button,a):focus-visible,.cooking-reset button:focus-visible{outline:4px solid var(--cook-focus);outline-offset:3px}
+body :is(.cv2-app,.cc-app,.ic-app) button:disabled{opacity:.48;cursor:default}
+body :is(.cv2-header,.cc-header,.ic-actions,.cc-actions,.cv2-actions) button:not(:disabled):active,.cooking-reset button:active{transform:translateY(2px);box-shadow:none}
+.cooking-reset{box-sizing:border-box;width:min(440px,calc(100vw - 28px));max-height:calc(100dvh - 28px);overflow:auto;margin:auto;padding:26px;border:3px solid #e3b2b5;border-radius:28px;background:linear-gradient(#fffcf7,#fff0ed);color:var(--cook-ink);box-shadow:0 14px 44px #653e4650;text-align:center;font-family:inherit}
+.cooking-reset::backdrop{background:#65434d66;backdrop-filter:blur(2px)}
+.cooking-reset h2{font-size:24px;line-height:1.3;margin:0 0 14px;letter-spacing:-.04em}.cooking-reset p{font-size:15px;line-height:1.7;margin:0 0 20px;word-break:keep-all}.cooking-reset-actions{display:flex;flex-direction:column;gap:12px}
+body .cooking-reset button{box-sizing:border-box;display:block;width:100%;min-height:48px;padding:10px 14px;border:2px solid var(--cook-border);border-radius:18px;background:var(--cook-cream);box-shadow:0 3px #cca39b;color:var(--cook-ink);font:800 15px/1.4 system-ui,'Malgun Gothic',sans-serif;cursor:pointer;margin:0}
+body .cooking-reset .cooking-destructive{background:#fbd5d9;border-color:#c47b89;color:#813b4b;box-shadow:0 3px #ba7c87}
+@media(max-width:700px),(max-height:500px){:root{--cook-control-font:12px}.cooking-reset{padding:20px}.cooking-reset h2{font-size:22px}.cooking-reset p{margin-bottom:15px}}

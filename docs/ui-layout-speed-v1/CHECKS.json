@@ -1,0 +1,39 @@
+{
+  "dateKST": "2026-11-20",
+  "baseline": "000a893ceb6d95bb716c2d3e5889dfe4850564de",
+  "focusedRun": {
+    "startTime": "2026-11-20T06:05:57.172Z",
+    "duration": 350921.23899999994,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "finalRecheck": {
+    "startTime": "2026-11-20T06:13:13.530Z",
+    "duration": 9982.757,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "finalInteraction": {
+    "startTime": "2026-11-20T06:17:55.569Z",
+    "duration": 56214.187,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "distinctCasesPassed": 26,
+  "originalPngUnchanged": 88,
+  "cacheUrlsChecked": 155,
+  "realSamsungDevice": false,
+  "deployed": false,
+  "storageKeysChanged": false,
+  "notes": [
+    "First UI-only run found focus wrap and short-scene selector issues; both fixed before focused passing run.",
+    "No-motion whisk input does not add an undo checkpoint; verified in final model recheck.",
+    "Runtime images, icecream logical composition and topping record schema are unchanged."
+  ]
+}
