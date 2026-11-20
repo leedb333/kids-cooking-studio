@@ -10,3 +10,25 @@
 
 /* The approved original stays unchanged; cover preserves its aspect ratio. */
 .ic-shop{background-color:#f7d8df;background-image:linear-gradient(#ffffff18,#ffffff18),var(--ic-shop-background);background-size:cover;background-position:center 64%;background-repeat:no-repeat}.ic-awning{background:repeating-linear-gradient(90deg,#a5dcca 0 60px,#fff0df 60px 120px)}
+
+/* Only step 3 changes layout; the same 800 x 1160 logical canvas is retained. */
+.ic-app.ic-topping{display:flex;flex-direction:column}.ic-topping-panel{flex:none;min-height:0;padding:6px 10px 0;background:linear-gradient(#fff9f0,#ffebe8)}
+.ic-topping .ic-topping-shelf{margin:0}.ic-topping .ic-topping-shelf button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.ic-topping .ic-actions{flex-wrap:wrap}.ic-topping .ic-topping-shelf button[data-exhausted=true]{opacity:.55;border-style:dashed}
+@media(min-width:740px) and (min-height:350px){
+ .ic-app.ic-topping{display:grid;grid-template-columns:minmax(0,1fr) clamp(280px,29vw,360px);grid-template-rows:auto auto minmax(0,1fr) auto}
+ .ic-topping>header{grid-column:1/-1;grid-row:1}.ic-topping>nav{grid-column:1/-1;grid-row:2}
+ .ic-topping>.ic-shop{grid-column:1;grid-row:3;min-width:0;overflow:hidden}.ic-topping .ic-scene{width:100%;min-width:0}
+ .ic-topping>.ic-topping-panel{grid-column:2;grid-row:3;min-height:0;padding:12px;border-left:3px solid #fff;overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y}
+ .ic-topping .ic-topping-shelf{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,minmax(100px,1fr));gap:10px;height:100%;overflow:visible;padding:0;touch-action:pan-y;align-items:stretch}
+ .ic-topping .ic-topping-shelf button{width:100%;min-width:0;min-height:100px;padding:6px;touch-action:pan-y}
+ .ic-topping .ic-topping-shelf img{height:clamp(58px,12dvh,108px);width:100%;min-height:0;flex:1;object-fit:contain}
+ .ic-topping .ic-topping-shelf span{font-size:14px}.ic-topping .ic-topping-shelf small{font-size:12px}
+ .ic-topping>footer{grid-column:1/-1;grid-row:4;display:block;border-left:0;padding:8px 12px 12px}
+ .ic-topping .ic-actions{flex-wrap:nowrap;gap:10px;padding:0}.ic-topping .ic-actions button{flex:0 1 auto;min-width:0}
+}
+@media(min-width:740px) and (max-height:500px){
+ .ic-topping>.ic-topping-panel{padding:7px}.ic-topping .ic-topping-shelf{gap:6px;grid-template-rows:repeat(3,minmax(72px,1fr))}
+ .ic-topping .ic-topping-shelf button{min-height:72px;padding:3px}.ic-topping .ic-topping-shelf img{height:38px;flex:1}.ic-topping .ic-topping-shelf span{font-size:12px}.ic-topping .ic-topping-shelf small{font-size:11px}
+ .ic-topping>footer{padding:4px 8px 8px}.ic-topping .ic-actions{gap:6px}.ic-topping .ic-actions button{font-size:12px;padding:6px 10px}
+}

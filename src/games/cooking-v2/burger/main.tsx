@@ -1,3 +1,4 @@
+import {ResetDialog} from '../shared/ResetDialog'
 import {useEffect,useRef,useState,type PointerEvent} from 'react'
 import {createRoot} from 'react-dom/client'
 import {useSavedRecipe} from '../full/useSavedRecipe'
@@ -13,10 +14,9 @@ type Drag={id:number;tool:Tool;origin:'panel'|'scene';x:number;y:number;moving:b
 const steps=[['grill','패티 굽기'],['choose','재료 고르기'],['stack','쌓기'],['complete','완성']] as const
 function App(){
  const {value:s,setValue:set,saved}=useSavedRecipe(storageKey,read),[view,setView]=useState(location.hash==='#play'),[images,setImages]=useState<Images|null>(null),[error,setError]=useState(false),[reset,setReset]=useState(false),[tool,setTool]=useState<Tool>(()=>s.stage==='stack'?(s.design.selected[0]??'patty'):s.grill.phase==='ready'?'raw':'spatula'),[tab,setTab]=useState<'ingredients'|'sauce'>('ingredients'),[removing,setRemoving]=useState(false),[selected,setSelected]=useState<number>(),[hint,setHint]=useState(''),[settle,setSettle]=useState<{id:number;x:number;y:number}>(),[exporting,setExporting]=useState(false),[squeeze,setSqueeze]=useState(false)
- const live=useRef(s),scene=useRef<HTMLDivElement>(null),strip=useRef<HTMLDivElement>(null),ghost=useRef<HTMLImageElement>(null),drag=useRef<Drag|null>(null),dialog=useRef<HTMLDialogElement>(null),audio=useRef<AudioContext|null>(null);live.current=s
+ const live=useRef(s),scene=useRef<HTMLDivElement>(null),strip=useRef<HTMLDivElement>(null),ghost=useRef<HTMLImageElement>(null),drag=useRef<Drag|null>(null),audio=useRef<AudioContext|null>(null);live.current=s
  useEffect(()=>{let valid=true;void loadImages().then(i=>{if(valid)setImages(i)}).catch(()=>{if(valid)setError(true)});return()=>{valid=false}},[])
  useEffect(()=>{const onHash=()=>setView(location.hash==='#play');addEventListener('hashchange',onHash);return()=>removeEventListener('hashchange',onHash)},[])
- useEffect(()=>{if(reset)dialog.current?.showModal();else dialog.current?.close()},[reset])
  useEffect(()=>()=>{void audio.current?.close()},[])
  useEffect(()=>{drag.current=null;if(ghost.current)ghost.current.style.display='none'},[s.stage,view])
  function sound(done=false){if(!live.current.sound)return;try{const c=audio.current??=new AudioContext();void c.resume().catch(()=>{});for(const [i,f] of (done?[523,659,784]:[480]).entries()){const o=c.createOscillator(),g=c.createGain(),t=c.currentTime+i*.12;o.frequency.value=f;g.gain.setValueAtTime(.025,t);g.gain.exponentialRampToValueAtTime(.001,t+.25);o.connect(g);g.connect(c.destination);o.start(t);o.stop(t+.25)}}catch{/* Silent play remains available. */}}
@@ -57,11 +57,11 @@ function App(){
    <div className="cv2-actions bg-actions">
     {s.stage!=='complete'&&<button disabled={s.stage==='grill'?!s.grillHistory.length:!s.history.length} onClick={()=>{commit(undo(s));setSelected(undefined)}}>↶ 되돌리기</button>}
     {s.stage==='grill'?<><button className="bg-tool" disabled={!canFlip} aria-label="뒤집개로 패티 뒤집기" onPointerDown={e=>begin(e,'spatula','panel')} onClick={e=>{if(e.detail===0){commit(flip(live.current));sound()}}}><img src={urls.spatula} alt=""/>뒤집개</button><div className="bg-heat-meter" role="progressbar" aria-label="패티 익은 정도" aria-valuenow={Math.round(cooking*100)} aria-valuemin={0} aria-valuemax={100}><i style={{width:cooking*100+'%'}}/></div><button onClick={()=>{commit(pan(s));sound()}} disabled={s.grill.phase!=='ready'}>팬에 올리기</button><button className="cv2-next" disabled={!canNext} onClick={()=>go('choose')}>다음 단계 →</button></>:s.stage==='choose'?<button className="cv2-next" onClick={()=>go('stack')}>쌓으러 가기 →</button>:s.stage==='stack'?<><button aria-pressed={removing} onClick={()=>setRemoving(v=>!v)}>재료 빼기</button>{selected&&removing&&<button onClick={()=>{commit(remove(s,selected));setSelected(undefined)}}>이 층 빼기</button>}<button className="cv2-next" onClick={()=>{go('complete');sound(true)}}>완성하기</button></>:<><button className="cv2-next" disabled={exporting} onClick={async()=>{setExporting(true);try{await downloadBurger(live.current.design.layers,images,live.current.design.applications)}catch{setHint('그림을 저장하지 못했어요. 다시 눌러 주세요.')}finally{setExporting(false)}}}>{exporting?'저장 중…':'PNG 저장'}</button><button onClick={home}>요리 선택으로</button></>}
-    <button onClick={()=>setReset(true)}>↻ 다시 만들기</button>
+    <button data-action="reset" onClick={()=>setReset(true)}>↻ 다시 만들기</button>
    </div>
   </footer>}
   {!saved&&<p className="bg-save-error" role="status">지금은 저장할 수 없어요. 놀이는 계속할 수 있어요.</p>}<img className="bg-ghost" ref={ghost} alt="" aria-hidden="true"/>
-  {reset&&<dialog className="cv2-dialog" ref={dialog} onCancel={e=>{e.preventDefault();setReset(false)}}><h2>햄버거를 처음부터 만들까요?</h2><p>지금 만든 햄버거만 새로 시작해요.</p><button autoFocus onClick={()=>setReset(false)}>계속 만들기</button><button className="cv2-next" onClick={()=>{commit({...fresh(),sound:s.sound});setTool('raw');setReset(false);setSelected(undefined);setHint('')}}>처음부터 만들기</button></dialog>}
+  {reset&&<ResetDialog description="지금 만든 햄버거만 새로 시작해요." onCancel={()=>setReset(false)} onConfirm={()=>{commit({...fresh(),sound:s.sound});setTool('raw');setReset(false);setSelected(undefined);setHint('')}}/>}
  </main>
 }
 createRoot(document.getElementById('root')!).render(<App/> )

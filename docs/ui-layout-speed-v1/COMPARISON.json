@@ -1,0 +1,22 @@
+{
+  "baseline": "000a893ceb6d95bb716c2d3e5889dfe4850564de",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "before": {
+    "canvasHeight": 386,
+    "foodHeight": 344.07241379310346,
+    "scale": 0.33275862068965517,
+    "top": 235.94482758620688,
+    "bottom": 580.0172413793103
+  },
+  "after": {
+    "canvasHeight": 525,
+    "foodHeight": 467.9741379310345,
+    "scale": 0.4525862068965517,
+    "top": 247.44827586206895,
+    "bottom": 715.4224137931035
+  },
+  "increasePercent": 36.01036269430051
+}

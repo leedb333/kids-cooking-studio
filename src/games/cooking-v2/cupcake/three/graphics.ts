@@ -1,3 +1,4 @@
+import {BAKE_MS} from './model'
 import metadata from './composition.json?raw'
 import {loadImages,type Images} from '../assets'
 import {renderCupcake} from '../Cupcake'
@@ -50,7 +51,7 @@ export async function load():Promise<Graphics>{const images=await loadImages(),e
 export function renderCup(g:Graphics,fill:number,bake=0){const key=fill+':'+bake;if(g.last?.key===key)return g.last.canvas;const c=make(),x=ctx(c);if(bake===1){x.drawImage(g.extra.rawBase,0,0)}else{x.drawImage(g.extra.back,0,0);x.save();const cl=geometry.cup.contentClip;x.beginPath();x.moveTo(cl.startX,0);x.lineTo(cl.endX,0);for(let i=cl.bottomPerX.length-1;i>=0;i--)x.lineTo(cl.startX+i,cl.bottomPerX[i]+2);x.closePath();x.clip();if(fill>0){x.save();const cy=690-90*fill;x.beginPath();x.ellipse(623,cy,440,95,0,0,Math.PI*2);x.clip();x.globalAlpha=1-bake;x.drawImage(g.images.surface,183,cy-95,880,190);x.restore()}if(bake>0){x.globalAlpha=Math.min(1,bake*2);x.drawImage(g.cake,0,170*(1-bake));x.globalAlpha=1}x.restore();x.drawImage(g.extra.front,0,0)}
  // Preserve the shared original foreground RGBA, including semitransparent lip pixels.
  const p=x.getImageData(0,0,1254,1254);for(const i of g.frontIndices)for(let j=0;j<4;j++)p.data[i+j]=g.front.data[i+j];x.putImageData(p,0,0);g.last={key,canvas:c};return c}
-export function renderTray(g:Graphics,w:Work){const c=make(1800,1000),x=ctx(c),p=w.step==='bake'?w.elapsed/3000:0;x.drawImage(g.extra.tray3,0,0);w.cups.forEach((cup,i)=>{const [sx,sy]=geometry.tray.anchors[i],s=geometry.tray.cupScale;x.drawImage(renderCup(g,cup.fill,p),sx-623*s,sy-1082*s,1254*s,1254*s)});const y=geometry.tray.protectedFrontY;x.drawImage(g.extra.tray3,0,y,1800,1000-y,0,y,1800,1000-y);return c}
+export function renderTray(g:Graphics,w:Work){const c=make(1800,1000),x=ctx(c),p=w.step==='bake'?w.elapsed/BAKE_MS:0;x.drawImage(g.extra.tray3,0,0);w.cups.forEach((cup,i)=>{const [sx,sy]=geometry.tray.anchors[i],s=geometry.tray.cupScale;x.drawImage(renderCup(g,cup.fill,p),sx-623*s,sy-1082*s,1254*s,1254*s)});const y=geometry.tray.protectedFrontY;x.drawImage(g.extra.tray3,0,y,1800,1000-y,0,y,1800,1000-y);return c}
 export function renderBowl(g:Graphics,w:Work,pour?:{id:Ingredient;progress:number}){
  const c=make(),x=ctx(c),food=make(),fx=ctx(food);x.drawImage(g.extra.empty,0,0);
  const placements:Record<Ingredient,number[]>={egg:[435,445,330,205],milk:[755,430,360,195],flour:[550,535,305,185],sugar:[790,535,265,160]};

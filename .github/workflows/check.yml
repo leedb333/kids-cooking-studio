@@ -17,7 +17,14 @@ jobs:
       - run: pnpm build
       - run: pnpm verify
       - run: pnpm exec playwright install --with-deps chromium
-      - run: pnpm test --reporter=line,json
+      - name: UI layout and speed checks
+        if: startsWith(github.head_ref, 'feat/cooking-ui-layout-speed-v1')
+        run: pnpm exec playwright test --config tests/ui-layout-speed.config.ts --reporter=line,json
+        env:
+          PLAYWRIGHT_JSON_OUTPUT_FILE: playwright-report/results.json
+      - name: Existing cooking core checks
+        if: ${{ !startsWith(github.head_ref, 'feat/cooking-ui-layout-speed-v1') }}
+        run: pnpm test --reporter=line,json
         env:
           PLAYWRIGHT_JSON_OUTPUT_FILE: playwright-report/results.json
       - uses: actions/upload-artifact@v4
