@@ -1,0 +1,304 @@
+{
+  "date": "2026-11-22",
+  "baseline": "634749f29a7f8805a1cd99ca237be2fbb2c4c4e7",
+  "scope": "Changed cooking features and four recipe core flows only; historical full suite not run",
+  "runs": [
+    {
+      "report": "final-polish.json",
+      "startTime": "2026-11-22T04:51:21.890Z",
+      "duration": 621913.12,
+      "expected": 45,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    {
+      "report": "final-polish-recheck.json",
+      "startTime": "2026-11-22T05:11:26.131Z",
+      "duration": 349162.19600000005,
+      "expected": 25,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  ],
+  "initialFailure": "Native touch after tray drag emitted pointerup without a click, leaving the cupcake inside. Fixed with pointerup activation and click deduplication for cupcake controls only.",
+  "finalRecheck": {
+    "passed": 25,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0
+  },
+  "distinctSelectedCasesWithLatestPassingResult": 47,
+  "cases": [
+    {
+      "file": "burger.spec.ts",
+      "title": "real touch grill and flip, choose, free stack, remove/undo, completion and PNG keep exact layers",
+      "status": "passed"
+    },
+    {
+      "file": "cooking-v2-full.spec.ts",
+      "title": "real four-step touch/drag flow, six ingredients, identical baked toppings and actual PNG export",
+      "status": "passed"
+    },
+    {
+      "file": "cupcake-extra.spec.ts",
+      "title": "extra model: local placement, caps, identity, remove and undo",
+      "status": "passed"
+    },
+    {
+      "file": "cupcake-extra.spec.ts",
+      "title": "extra old save, malformed fields and histories preserve cream and sprinkles",
+      "status": "passed"
+    },
+    {
+      "file": "cupcake-extra.spec.ts",
+      "title": "extra tablet: three independent designs, limits, removal, completion and actual PNG equality",
+      "status": "passed"
+    },
+    {
+      "file": "cupcake-extra.spec.ts",
+      "title": "extra phone-portrait shelf, three selectors, reset cancel and other saves",
+      "status": "passed"
+    },
+    {
+      "file": "cupcake-extra.spec.ts",
+      "title": "extra phone-landscape shelf, three selectors, reset cancel and other saves",
+      "status": "passed"
+    },
+    {
+      "file": "cupcake-extra.spec.ts",
+      "title": "extra SVG overlay and Canvas export agree for both creams and partial piping",
+      "status": "passed"
+    },
+    {
+      "file": "cupcake-three.spec.ts",
+      "title": "touch ingredients, circular whisk, independent fill, drag oven, three decorations and actual PNG",
+      "status": "passed"
+    },
+    {
+      "file": "cupcake-three.spec.ts",
+      "title": "migration requires explicit consent, retains old bytes and imports only compatible decoration",
+      "status": "passed"
+    },
+    {
+      "file": "cupcake-three.spec.ts",
+      "title": "actual renderer preserves every foreground RGBA through continuous baking and protects bowl front",
+      "status": "passed"
+    },
+    {
+      "file": "cupcake-three.spec.ts",
+      "title": "archiving an unfinished legacy recipe preserves bytes, does not invent an import and survives reset",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "D immutable models, food renderers and all approved food PNGs match main",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "D process reset stays last, oven stays inside scene, icecream panel and touch areas 1280x800",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "D process reset stays last, oven stays inside scene, icecream panel and touch areas 1280x720",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "D process reset stays last, oven stays inside scene, icecream panel and touch areas 1024x600",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "D process reset stays last, oven stays inside scene, icecream panel and touch areas 844x390",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "D process reset stays last, oven stays inside scene, icecream panel and touch areas 390x844",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "D icecream navigation alone never rerolls or relocates saved paths and toppings in cup/cone 1-3 scoops",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "C home cards, routes and independent scrolling 1280x800",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "C home cards, routes and independent scrolling 1280x720",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "C home cards, routes and independent scrolling 1024x600",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "C home cards, routes and independent scrolling 844x390",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "C home cards, routes and independent scrolling 390x844",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "C PWA icons have correct dimensions, opaque background and maskable safe artwork",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "B four completion bars, isolated reset, home/resume and layout 1280x800",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "B four completion bars, isolated reset, home/resume and layout 1280x720",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "B four completion bars, isolated reset, home/resume and layout 1024x600",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "B four completion bars, isolated reset, home/resume and layout 844x390",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "B four completion bars, isolated reset, home/resume and layout 390x844",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "B four actual 1400 PNG downloads retain original transparency policy and completed designs",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "A cupcake oven: one footer action, duplicate input, invalid drop, drag, bake and resume",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "A cupcake old oven phases and footer-only cooking preserve all cups and decorations",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "A pizza original oven shell, drag and baking stay intact",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "A icecream previous-step buttons preserve records; future steps blocked; only removed-scoop toppings leave",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "C new icons and four recipes reopen offline and old playground cache is untouched",
+      "status": "passed"
+    },
+    {
+      "file": "icecream-toppings.spec.ts",
+      "title": "six toppings, independent limits, undo refunds, persisted exact decorations and completion without toppings",
+      "status": "passed"
+    },
+    {
+      "file": "icecream-toppings.spec.ts",
+      "title": "real topping drag adds once; invalid cup drop, cancelled syrup and card scroll keep state",
+      "status": "passed"
+    },
+    {
+      "file": "icecream-placement-checks.ts",
+      "title": "visible ownership, local scatter, bounded overlap correction, cancellation and unchanged syrup",
+      "status": "passed"
+    },
+    {
+      "file": "icecream-finish-checks.ts",
+      "title": "finish and transparent download: cup 1-3 scoops, no toppings and decorated",
+      "status": "passed"
+    },
+    {
+      "file": "icecream-finish-checks.ts",
+      "title": "finish and transparent download: cone 1-3 scoops, no toppings and decorated",
+      "status": "passed"
+    },
+    {
+      "file": "icecream-finish-checks.ts",
+      "title": "maximum toppings, saved completion, home resume and confirmed reset",
+      "status": "passed"
+    },
+    {
+      "file": "icecream.spec.ts",
+      "title": "container selection, same-flavor limit, removal, container change and resume",
+      "status": "passed"
+    },
+    {
+      "file": "icecream.spec.ts",
+      "title": "all ten flavors add via touch and preserve unrelated saves",
+      "status": "passed"
+    },
+    {
+      "file": "icecream.spec.ts",
+      "title": "real touch drag adds once; invalid, cancelled and shelf scroll do not add",
+      "status": "passed"
+    },
+    {
+      "file": "ui-layout-speed.spec.ts",
+      "title": "ui touch: horizontal drag from right panel adds once and syrup follows the same finger path",
+      "status": "passed"
+    },
+    {
+      "file": "final-polish.spec.ts",
+      "title": "A native touch insertion followed by the first enabled bake tap is never swallowed",
+      "status": "passed"
+    }
+  ],
+  "typecheck": "passed: pnpm exec tsc --noEmit",
+  "productionBuild": "passed: pnpm build (includes typecheck)",
+  "pagesAndOffline": "passed: pnpm verify; 159 cached paths; base /kids-cooking-studio/",
+  "protectedFiles": 108,
+  "originalFoodPngs": 88,
+  "pngSize": [
+    1400,
+    1400
+  ],
+  "viewports": [
+    [
+      1280,
+      800
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      1024,
+      600
+    ],
+    [
+      844,
+      390
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "realSamsungDeviceTested": false,
+  "mergePerformed": false,
+  "pagesDeploymentPerformed": false
+}

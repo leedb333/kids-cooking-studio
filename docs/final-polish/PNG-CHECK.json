@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pizza",
+    "transparent": 0,
+    "edge": 5596,
+    "difference": 0
+  },
+  {
+    "id": "burger",
+    "transparent": 1090420,
+    "edge": 0,
+    "difference": 0
+  },
+  {
+    "id": "cupcake",
+    "transparent": 1227669,
+    "edge": 0,
+    "difference": 0
+  },
+  {
+    "id": "icecream",
+    "transparent": 1556154,
+    "edge": 0,
+    "difference": 0
+  }
+]

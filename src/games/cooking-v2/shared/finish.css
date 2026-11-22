@@ -1,0 +1,6 @@
+body .cooking-finish-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;width:min(760px,100%);margin:auto;padding:2px 0 5px}
+body :is(.cv2-app,.cc-app,.ic-app) .cooking-finish-actions>button{min-width:0;width:100%;min-height:52px;margin:0;padding:10px 12px;border-radius:18px;border:2px solid var(--cook-border);font-size:15px;line-height:1.3;font-weight:800;white-space:nowrap;background:var(--cook-cream);color:var(--cook-ink);box-shadow:0 3px #cca39b}
+body :is(.cv2-app,.cc-app,.ic-app) .cooking-finish-actions>.cook-save{background:linear-gradient(#eafff6,var(--cook-mint));border-color:#7fb9a7;box-shadow:0 3px #7eac9d;color:#345d50}
+body :is(.cv2-app,.cc-app,.ic-app) .cooking-finish-actions>[data-action=reset]{background:#fff0f0;border-color:#cb8d94;color:#934b58}
+body :is(.cv2-actions,.cc-actions,.ic-actions)>[data-action=reset]{order:99}
+@media(max-width:700px),(max-height:500px){body .cooking-finish-actions{gap:6px}body :is(.cv2-app,.cc-app,.ic-app) .cooking-finish-actions>button{min-height:48px;padding:8px 5px;font-size:12px}}
