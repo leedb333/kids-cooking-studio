@@ -10,7 +10,7 @@ const recipes=[
  {id:'pizza',name:'피자',key:sessionKey,url:'prototypes/cooking-v2/kitchen/#pizza',ready:'.cv2-dough-tools',reset:'↻ 다시 만들기'},
  {id:'burger',name:'햄버거',key:burgerKey,url:'prototypes/cooking-v2/burger/#play',ready:'.bg-grilling',reset:'↻ 다시 만들기'},
  {id:'cupcake',name:'컵케이크',key:cupcakeKey,url:'prototypes/cooking-v2/cupcake/#play',ready:'.cc-work',reset:'↻ 다시 만들기'},
- {id:'icecream',name:'아이스크림',key:iceKey,url:'prototypes/cooking-v2/icecream/',ready:'.ic-scene',reset:'↻ 처음부터 다시'}
+ {id:'icecream',name:'아이스크림',key:iceKey,url:'prototypes/cooking-v2/icecream/',ready:'.ic-scene',reset:'↻ 다시 만들기'}
 ]
 async function ready(p:Page,r:typeof recipes[number]){await expect(p.locator(r.ready)).toBeVisible({timeout:20000});await expect(p.getByText(/그림을 준비하고 있어요/)).toHaveCount(0,{timeout:20000})}
 function seeds(){return {[sessionKey]:{...newSession(),rolling:.5},[burgerKey]:{...burger(),sound:false,design:{...burger().design,selected:[...burger().design.selected,'onion']}},[cupcakeKey]:edit(freshGame(),{ingredients:['egg']}),[iceKey]:{...icecream(),step:2,scoops:['vanilla']}}}

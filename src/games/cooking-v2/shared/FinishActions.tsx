@@ -1,0 +1,2 @@
+import './finish.css'
+export function FinishActions({onSave,onHome,onReset,busy=false,disabled=false}:{onSave:()=>void;onHome:()=>void;onReset:()=>void;busy?:boolean;disabled?:boolean}){return <div className="cooking-finish-actions" role="group" aria-label="완성 작품 조작"><button className="cook-save" disabled={busy||disabled} aria-busy={busy} onClick={onSave}>요리 저장</button><button className="cook-home" onClick={onHome}>요리 선택</button><button data-action="reset" onClick={onReset}>↻ 다시 만들기</button></div>}

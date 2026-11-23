@@ -32,3 +32,11 @@
  .ic-topping .ic-topping-shelf button{min-height:72px;padding:3px}.ic-topping .ic-topping-shelf img{height:38px;flex:1}.ic-topping .ic-topping-shelf span{font-size:12px}.ic-topping .ic-topping-shelf small{font-size:11px}
  .ic-topping>footer{padding:4px 8px 8px}.ic-topping .ic-actions{gap:6px}.ic-topping .ic-actions button{font-size:12px;padding:6px 10px}
 }
+
+.ic-app .ic-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.ic-app .ic-steps button{min-width:0;min-height:48px;padding:6px;display:flex;align-items:center;justify-content:center;gap:6px;border-radius:24px;background:#f0e1df;box-shadow:none;border:2px solid transparent;font-size:14px}.ic-app .ic-steps button span{padding:0;background:none;flex:0 1 auto;border-radius:0;font-size:inherit}.ic-app .ic-steps button b{flex:none}.ic-app .ic-steps button.active{opacity:1;background:#ffe7a7;border-color:#eeb276}.ic-app .ic-steps button:not(:disabled){background:#ddf3e9;border-color:#a1cbbb}.ic-app .ic-steps button:disabled:not(.active){opacity:.55}@media(max-width:700px),(max-height:500px){.ic-app .ic-steps{gap:4px;padding:4px}.ic-app .ic-steps button{font-size:10px;gap:3px;padding:4px 2px;line-height:1.2;min-height:48px}.ic-app .ic-steps button span{white-space:normal}}
+
+@media(min-width:650px) and (max-height:500px){.ic-app:not(.ic-topping){grid-template-rows:50px 56px minmax(0,1fr)}}
+
+.ic-app .ic-steps>span{min-height:48px;display:flex;align-items:center;justify-content:center}.ic-app .ic-steps>span.active{background:#ffe7a7}@media(max-width:700px),(max-height:500px){.ic-app .ic-steps>span{font-size:10px;padding:4px 2px}}
+
+@media(min-width:740px) and (max-height:500px){.ic-topping>.ic-topping-panel{padding:4px}.ic-topping .ic-topping-shelf{gap:4px;grid-template-rows:repeat(3,minmax(60px,1fr))}.ic-topping .ic-topping-shelf button{min-height:60px;padding:2px}.ic-topping .ic-topping-shelf img{height:26px;min-height:0}.ic-topping .ic-topping-shelf span{font-size:11px}.ic-topping .ic-topping-shelf small{font-size:10px}.ic-topping .ic-awning{position:absolute;top:0;height:8px}.ic-topping .ic-guide{position:absolute;top:1px;left:50%;transform:translateX(-50%);margin:0;padding:3px 10px;font-size:10px;white-space:nowrap}.ic-topping .ic-scene{height:100%}}

@@ -1,0 +1,10 @@
+{
+  "original": [
+    1254,
+    1254
+  ],
+  "subjectMaxRadius": 191.06281689538653,
+  "safeRadius": 204.8,
+  "method": "Built-in image generation, uniform PNG resizing only",
+  "sourcePreserved": true
+}
